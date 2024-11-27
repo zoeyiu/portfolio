@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Zoe Yiu | Portfolio</title>
+    <!--CSS Link-->
+    <link rel="stylesheet" href="../css/general_style.css" />  
+    <link rel="stylesheet" href="../css/wcag.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!--logo Link-->
+    <link rel="icon" href="../media/logo2.png" type="image/png" />
+    <!--Google Font-Montserrat & Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!--font-awesome: https://fontawesome.com/-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Prism.js 核心文件 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+
+  </head>
+  <div class="loading-transition2"></div>
+  <body class="main" style="opacity: 0;">
+        
+        <div class="mouse-follower"></div>
+        <header>
+            <a href="/index.html" class="page-link">
+                <img src="/media/logo.png" alt="Zoe Portfolio Logo" class="logo" />
+            </a>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </header>
+        <div class="full-screen-menu" id="fullScreenMenu">
+        <div class="close" onclick="toggleMenu()">&times;</div>
+        <nav>
+            <a href="/index.html" class="page-link" onclick="toggleMenu()">Homepage</a>
+            <a href="../about/about.html" class="page-link" onclick="toggleMenu()">About Me</a>
+            <a href="../projects/projects.html" class="page-link" onclick="toggleMenu()">Projects</a>
+            <a href="https://drive.google.com/file/d/1WoH3im1om005fSyAxdIr6alMYU4Ekc-2/view?usp=sharing" target="_blank" onclick="toggleMenu()">Resume</a>
+            <!--記得要改連結 -->
+            <a href="/contact/contact.html" class="page-link" onclick="toggleMenu()">Contact Me</a>
+        </nav>
+        </div>
+        <main >
+            <section class="title-container">
+                <h1>Exploring the BBC Website's Accessibility: A Comprehensive WCAG Evaluation</h1>
+                
+            </section>
+            <section class="project-image">
+                <img src="../media/WCAG.jpg" alt="WCAG Cover" /> <!-- 圖片要改 -->
+            </section>
+            <section class="project-container">
+                <section class="left-wrap">
+                    <ul class="overview-menu">
+                        <li class="overview">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text" >Overview</span>
+                        </li>
+                        <li  class="wcag">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">WCAG</span>
+                        </li>
+                        <li  class="issue">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">Perceivability</span>
+                        </li>
+                        <li  class="Operability">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">Operability</span>
+                        </li>
+                        <li  class="Understand">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">Understandability</span>
+                        </li>
+                        <li  class="robust">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">Robust</span>
+                        </li>
+                        <li  class="take">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">Take Away</span>
+                        </li>
+                    </ul>
+                </section>
+                <div class="main-content">
+                    <section class="project-overview" id="overview">
+                        
+                        <h2 ><i class="fa-solid fa-caret-right "></i>Overview</h2>
+                        <p >This project involves evaluating a live website, <strong>BBC News</strong>, against 
+                            the W3C Web Content Accessibility Guidelines (WCAG) 2.1.
+                            The evaluation assesses the website's accessibility based on 
+                            key principles such as perceivability, operability, understandability, 
+                            and robustness. Areas where the website does not meet these principles 
+                            are identified, with detailed explanations and actionable recommendations 
+                            provided for improvement. The project offers practical experience in 
+                            applying accessibility standards and proposing solutions to enhance 
+                            inclusive web design.
+                        </p>
+                        <h3 >About BBC Website</h3>
+                        <p >
+                            The BBC News website is the famous and trustworthy British news media 
+                            that spreads new knowledge, policies, and practices for a global audience, 
+                            and builds a platform where individuals have discussions and anlysis on social issues. 
+                            The key feature of the BBC website is its comprehensive and diverse coverage across 
+                            various sectors, including business, technology, health, global news, and politics. 
+                            It also enhances the user experience through interactive multimedia, such as images, 
+                            photographs, videos, and audio, which help to present information in an engaging way.
+
+                        </p>
+                        <div class="bbc">
+                            <figure>
+                                <img src="../media/BBC.png" alt="BBC News Website" />
+                                <figcaption><a href="https://www.bbc.com" target="_blank">BBC News Website</a></figcaption> <!-- 添加说明文字 -->
+                            </figure>
+                        </div>
+                    </section>
+                    <section class="intro" id="wcag">
+                        <h2><i class="fa-solid fa-caret-right"></i>What is WCAG?</h2>
+                        <p>The Web Content Accessibility Guidelines (WCAG) are a set of recommendations developed 
+                            by the World Wide Web Consortium (W3C) to ensure that web content is accessible to all 
+                            users, including those with disabilities. WCAG provides a framework for designing and 
+                            developing websites that can be easily navigated and interacted with by people with various 
+                            impairments, such as visual, auditory, motor, and cognitive disabilities. The guidelines are 
+                            organized into four key principles: <strong>Perceivable, Operable, Understandable, and Robust (POUR).</strong> 
+                            These principles aim to make content more accessible through practices such as providing 
+                            text alternatives for non-text content, ensuring navigation is possible via a keyboard, and 
+                            making content adaptable to different devices. WCAG also includes success criteria at varying 
+                            levels of conformance (A, AA, AAA), allowing websites to be evaluated and improved based on 
+                            their accessibility standards. By following WCAG, developers can create more inclusive, 
+                            user-friendly web experiences.
+                        </p>
+                        <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">
+                            <button class="learn-more-button">
+                                Learn More
+                            </button>
+                        </a>
+                    </section>
+                    <section class="issue-section" >
+                        <h2><i class="fa-solid fa-caret-right"></i>Critical Issues & Solutions</h2>
+                        <section id="issue">
+                            <h3>Perceivability</h3>
+                            <h4>Issue 1: Inconsistent Subtitle Availability for Video Content</h4>
+                            <p>Based on WCAG Guideline 1.2: Time-based Media, video or audio content 
+                                should include captions or provide alternative formats, such as transcripts or subtitles, 
+                                to ensure accessibility. These alternatives aim to make time-based media content perceivable 
+                                to users with disabilities, including those who are deaf or hard of hearing, as well as 
+                                individuals who may not be able to view or hear the media due to situational limitations.
+                            </p>
+                            <h5>Recommendations</h5>
+                            <p>While some videos on the BBC website include subtitle functionality, others lack this essential 
+                                feature. To align with WCAG Guideline 1.2: Time-based Media, all video content should consistently 
+                                provide accurate and synchronized captions. Additionally, transcripts should be made available 
+                                for all pre-recorded audio or video content to cater to users who prefer or require text-based 
+                                alternatives. For live video content, the BBC should implement real-time captioning to support 
+                                accessibility for individuals who are deaf or hard of hearing. These improvements will ensure that 
+                                all users, regardless of their abilities, can access and understand the content, promoting 
+                                inclusivity and compliance with accessibility standards. </p>
+                            <div class="bbc-issue">
+                                <figure>
+                                    <img src="../media/wcag_subtitle.png" alt="BBC News Video with Subtitle" />
+                                    <figcaption>BBC News Video with Subtitle</a></figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="../media/wcag-notitle.png" alt="BBC News Video without Subtitle" />
+                                    <figcaption>BBC News Video without Subtitle</a></figcaption> 
+                                </figure>
+                            </div>
+                            <h4>Issue 2: Missing Text Alternatives for Logo</h4>
+                            <p>WCAG Guideline 1.1 focuses on ensuring that all non-text content is 
+                                accompanied by a text alternative. This guideline ensures accessibility 
+                                for individuals with visual impairments or other disabilities by providing 
+                                descriptive text that conveys the purpose or function of non-text elements, 
+                                such as images, icons, or charts. The goal is to make all content perceivable 
+                                to assistive technologies like screen readers, enhancing the overall inclusivity 
+                                of digital platforms.</p>
+                            <h5>Recommendations</h5>
+                            <p>Some images on the BBC website lack descriptions, which poses significant accessibility 
+                                barriers for users who rely on assistive technologies. To address this issue, 
+                                it is recommended to add appropriate <code>role</code> and <code>aria-label</code> attributes to these image 
+                                elements. The <code>role</code> attribute specifies the purpose or functionality of the image, 
+                                while the <code>aria-label</code> attribute provides a concise description that is accessible to screen readers.
+                            </p>
+                            <blockquote>
+                                <p> &lt;svg width="112" height="32" viewBox="0 0 112 32" fill="none" xmlns="http://www.w3.org/2000/svg" <span class="highlight">role="img" aria-label="BBC Logo"</span>&gt;
+                                  &lt;/svg&gt;</p> 
+
+                            </blockquote>
+                              
+                            <div class="bbc-issue">
+                                <figure>
+                                    <img src="../media/bbc_sourceCode_logo.png" alt="BBC News Logo Source Code" />
+                                    <figcaption>BBC News Logo Source Code</a></figcaption>
+                                </figure>
+                            </div>
+                        </section>
+                        <section id="Operability">
+                            <h3>Operability</h3>
+                            <p> Operability ensures that once users can perceive the content of 
+                                a website, they must be able to interact with it effectively. 
+                                This principle is supported by four key guidelines: 1. 
+                                Allow all tasks to be performed using a keyboard, not just a mouse. 
+                                2.Provide users with enough time to complete tasks. 
+                                3.Avoid flashing or flickering content that could trigger seizures. 
+                                4.Enable users to easily navigate, find content, and understand their 
+                                current location within the site. 
+                            </p>
+                            <h4>Issue 3: Keyboard Access</h4>
+                            <p>The issue with the <strong> advertisement and hamburger menu </strong>not being accessible 
+                                initially via the Tab key presents a significant barrier to users relying 
+                                on keyboard navigation. Users are forced to either repeatedly attempt to 
+                                access these elements or resort to using a mouse to trigger them, which 
+                                creates an inconsistency in navigation and accessibility. This problem 
+                                violates WCAG's Operability principle, particularly the guideline that 
+                                requires all interactive elements to be operable by keyboard alone. 
+                                For individuals with motor impairments, those who cannot use a mouse, or 
+                                users who prefer keyboard navigation, the inability to access these 
+                                essential features with the Tab key limits their ability to interact 
+                                with the content and navigate the website efficiently.</p>
+                            <h5>Recommendations</h5>
+                            <p>
+                                To ensure accessibility, it's important to correctly use the <code>tabindex</code>
+                                attribute to ensure that interactive elements, like the hamburger menu 
+                                and advertisements, are included in the natural tab order of the page. 
+                                By explicitly defining the tabindex for these elements, users can navigate 
+                                to them in a logical sequence using the Tab key. Additionally, to support dynamic 
+                                elements such as the hamburger menu, JavaScript can be used to ensure they 
+                                are accessible immediately after the page loads, rather than requiring specific 
+                                user actions to trigger them.
+                            </p>
+                            <p>HTML</p>
+                            <blockquote>
+                                
+                                <p> 
+                                    &lt;button role="button" aria-expanded="false" aria-label="Open menu" class="sc-8a068d35-3 kvafkS" <span class="highlight">id="hamburger-menu" tabindex="0"</span>&lt;/button&gt;
+                                </p>
+                                
+                            </blockquote>
+                            <p>Javascript</p>
+                            <blockquote>
+                                <p>
+                                    <span class="highlight">document.getElementById('hamburger-menu').focus();</span>
+                                </p>
+                            </blockquote>
+                            <div class="bbc-issue">
+                                <figure>
+                                    <img src="../media/bbc_tab.png" alt="Hamburger Menu" />
+                                    <figcaption>Hamburger Menu</a></figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="../media/bbc_ad.png" alt="BBC News Advertisement" />
+                                    <figcaption>Advertisement Section</a></figcaption>
+                                </figure>
+                            </div>
+
+                        </section>
+                        <section id="Understand">
+                            <h3>Understandability</h3>
+                            <p>
+                                WCAG's Understandability principle focuses on making content clear 
+                                and easy to comprehend for all users, including those with cognitive, 
+                                learning, or language challenges. The guidelines under this principle encourage 
+                                clear language, consistent structure, and predictable behavior to ensure that 
+                                users can follow and interpret information without confusion. This includes using 
+                                simple, concise text, providing mechanisms for users to control content, and offering 
+                                alternative ways to present content. 
+                            </p>
+                            <h4>Issue 4: Title Readability</h4>
+                            <p>The title of “Maui emergency chief quits amid wildfire criticism” 
+                                receives low readability scores from two readability analysis tools,  
+                                readabilityformulas.com and charactercalculator. They indicate the texts 
+                                are too professional to easily understand. However, the title of 
+                                “Drone attack hits building in central Mascow” is moderately easy 
+                                to read by individuals with a 7th to 8th-grade reading level.
+                            </p>
+                            <h5>Recommendations</h5>
+                            <p>
+                                To improve readability, it is crucial to use straightforward 
+                                and simple words. For example, the incomprehensible headline 
+                                “Maui emergency chief quits amid wildfire criticism” could be 
+                                rephrased as “Maui chief quits for fatal wildfire” to better 
+                                accommodate a broader audience.
+
+                            </p>
+                            <div class="bbc-issue">
+                                <figure>
+                                    <img src="../media/bbc_title.png" alt="Articles Titles" />
+                                    <figcaption>Titles Comparasion</a></figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="../media/bbc_lan.png" alt="Articles Title Readability" />
+                                    <figcaption>Articles Title Readability Result from Charactercalculator</a></figcaption>
+                                </figure>
+                            </div>
+                        </section>
+                        <section id="robust">
+                            <h3>Robust</h3>
+                            <p>“Robustness" focuses on ensuring that web content is compatible with a 
+                                wide range of current and future browsers, web-enabled devices, and 
+                                assistive technologies. The goal is for the content to display and 
+                                function as the author intended, regardless of the platform or technology 
+                                being used. A robust web page should adapt to various environments and remain 
+                                accessible as technologies evolve. Although browsers and assistive technologies 
+                                try to compensate for coding errors, there are limits to what can be corrected. 
+                            </p>
+                            <h4>Issue 5: Name, Role, Value Label</h4>
+                            <p> By using IBM Equal Access Accessibility Checker, 
+                                it was identified that the social media buttons on the website contain <code>data-testid</code>attributes, but they 
+                                lack descriptive labels for screen readers. Without proper labeling, screen readers 
+                                may fail to communicate the button's purpose (e.g., "Facebook," "Instagram," etc.) to users, , violating the WCAG 4.1.2: Name, Role, Value guideline. </p>
+                            <h5>Recommendations</h5>
+                            <p>Add descriptive <code>aria-label</code> attributes to each button, so users with screen readers 
+                                can easily understand what each button represents.</p>
+                            <blockquote>
+                                <p>
+                                    
+                                    &lt;button type="button" 
+                                                data-testid="social-button-facebook" 
+                                                class="sc-59293285-2 sc-59293285-5 sc-59293285-6 cHPPyV ccuzzl hBBtER" 
+                                                <span class="highlight">aria-label="Visit Facebook"></span> Facebook
+                                    &lt;/button&gt;
+                                    
+                                </p>
+                            </blockquote>
+                            <div class="bbc-issue">
+                                <figure>
+                                    <img src="../media/bbc_social.png" alt="BBC Social Media Icons" />
+                                    <figcaption>Social Media Icons</a></figcaption>
+                                </figure>
+                            </div>
+                        </section>
+                    </section>  
+                    <section class="takeaway" id="take">
+                        <h2><i class="fa-solid fa-caret-right"></i>Take Away</h2>
+                        <p>Working on the WCAG accessibility project has been a valuable 
+                            learning experience, providing deep insights into the importance 
+                            of web accessibility for diverse user groups. Through this project, 
+                            I gained a solid understanding of how to assess and apply the Web 
+                            Content Accessibility Guidelines (WCAG) to ensure that websites are 
+                            usable by people with various disabilities, including those who rely 
+                            on assistive technologies. I learned to identify common accessibility 
+                            issues such as poor keyboard navigation, missing ARIA labels, and 
+                            insufficient focus indicators. This experience reinforced 
+                            the importance of inclusive design and how making small 
+                            adjustments can significantly improve the user experience for 
+                            everyone, not just those with disabilities.
+                        </p>
+                    </section>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="wrapper">
+            <div class="row"></div>
+            <div class="container_info">
+                <ul class="info">
+                <h3>Contact Information<h3>
+                <p>Feel free to reach out to me any time.</p>
+                <p><a href="mailto:zoeyiu0821@gmail.com">zoeyiu0821@gmail.com</a></p>  
+                </ul>
+                <ul class="project_info">
+                <h3>Featured Projects<h3>
+                <li><a href="/projects/ZenZzz.html" target="_blank">ZenZzz</a></li>
+                <li><a href="/projects/BlissLife.html" target="_blank">BlissLife</a></li>
+                <li><a href="/projects/CreditCard.html" target="_blank">Credit Card Platform</a></li>
+                <li><a href="/projects/Googleslides.html" target="_blank">Google Slides Research</a></li>
+                
+                </ul>
+                <ul class="project_info">
+                <h3>More Work<h3>
+                <li><a href="/projects/FamilyMart.html" target="_blank">FamilyMart</a></li>
+                <li><a href="/projects/LeapNews.html" target="_blank">Leap News</a></li>
+                <li><a href="/projects/DesignThinking.html" target="_blank">Design Thinking</a></li>
+                <li><a href="/projects/Wcag.html" target="_blank">WCAG Research</a></li>
+                </ul>
+                <ul>
+                <h3>Follow Me</h3>
+                <div class="contact_icons">
+                    
+                    <a href="https://www.linkedin.com/in/zoeyiu0821/" target="_blank"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
+                    <a href="https://zoeyuchat.wordpress.com" target="_blank"><i class="fa-brands fa-wordpress" id="wordpress"></i></a>
+                </div>
+                </ul>
+            </div>
+            </div>
+        </footer>
+        <div class="pagetransition">
+            <div class="transition_text">
+              <p>Let's Work Together</p>
+            </div>
+        </div>
+        <script src="../js/general.js"></script>
+        <script src="../js/wcag.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    </body>
+</html>

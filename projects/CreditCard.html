@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Protected Page</title>
+    <link rel="stylesheet" href="../css/creditcard.css" />
+  </head>
+  <body>
+    <div class="title-container" id="titleContainer">
+      <h1>Password Protected Page</h1>
+    </div>
+
+    <!-- 密码输入容器 -->
+    <div class="input-container" id="passwordContainer">
+      <input type="password" id="passwordInput" placeholder="Enter password" />
+      <button id="submitBtn">Submit</button>
+      <p class="error-message" id="errorMessage">
+        Oops! That’s not the right password. Give it another shot!
+      </p>
+    </div>
+
+    <!-- 受保护的内容 -->
+    <div class="protected-content" id="protectedContent">
+      <h2>Welcome to the protected content!</h2>
+      <p>This content is only visible after entering the correct password.</p>
+    </div>
+
+    <script src="../js/creditcard.js"></script>
+  </body>
+</html>

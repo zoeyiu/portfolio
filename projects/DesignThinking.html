@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Zoe Yiu | Portfolio</title>
+    <!--CSS Link-->
+    <link rel="stylesheet" href="../css/general_style.css" />  
+    <link rel="stylesheet" href="../css/designthinking.css" />
+    <link rel="stylesheet" href="../css/contentTemplate.css" />
+    <!--logo Link-->
+    <link rel="icon" href="../media/logo2.png" type="image/png" />
+    <!--Google Font-Montserrat & Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!--font-awesome: https://fontawesome.com/-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <div class="loading-transition2"></div>
+  <body class="main" style="opacity: 0;">
+        
+        <div class="mouse-follower"></div>
+        <header>
+            <a href="/index.html" class="page-link">
+                <img src="/media/logo.png" alt="Zoe Portfolio Logo" class="logo" />
+            </a>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </header>
+        <div class="full-screen-menu" id="fullScreenMenu">
+        <div class="close" onclick="toggleMenu()">&times;</div>
+        <nav>
+            <a href="/index.html" class="page-link" onclick="toggleMenu()">Homepage</a>
+            <a href="../about/about.html" class="page-link" onclick="toggleMenu()">About Me</a>
+            <a href="../projects/projects.html" class="page-link" onclick="toggleMenu()">Projects</a>
+            <a href="https://drive.google.com/file/d/1WoH3im1om005fSyAxdIr6alMYU4Ekc-2/view?usp=sharing" target="_blank" onclick="toggleMenu()">Resume</a>
+            <!--記得要改連結 -->
+            <a href="../contact/contact.html" class="page-link" onclick="toggleMenu()">Contact Me</a>
+        </nav>
+        </div>
+        <main >
+            <section class="title-container">
+                <h1></h1>
+                <h3>副標題 </h3>
+            </section>
+            <section class="project-image">
+                <img src="../media/ZenZzzCover.png" alt="圖片要改" /> <!-- 圖片要改 -->
+            </section>
+            <section class="project-container">
+                <section class="left-wrap">
+                    <ul class="overview-menu">
+                        <li class="id1">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text" >頁籤一</span>
+                        </li>
+                        <li  class="id2">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">頁籤二</span>
+                        </li>
+                        <li  class="id3">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">頁籤三</span>
+                        </li>
+                        <li  class="id4">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">頁籤四</span>
+                        </li>
+                    </ul>
+                </section>
+                <div class="main-content">
+                    <section class="project-overview" id="id1">
+                    </section>
+                    <section class="UX-Research" id="id2">
+                    </section>
+                    <section class="UX-Design" id="id3">
+
+                    </section>  
+                    <section class="UI-Design" id="id4">
+
+                    </section>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="wrapper">
+            <div class="row"></div>
+            <div class="container_info">
+                <ul class="info">
+                <h3>Contact Information<h3>
+                <p>Feel free to reach out to me any time.</p>
+                <p><a href="mailto:zoeyiu0821@gmail.com">zoeyiu0821@gmail.com</a></p>  
+                </ul>
+                <ul class="project_info">
+                <h3>Featured Projects<h3>
+                <li><a href="/projects/ZenZzz.html" target="_blank">ZenZzz</a></li>
+                <li><a href="/projects/BlissLife.html" target="_blank">BlissLife</a></li>
+                <li><a href="/projects/CreditCard.html" target="_blank">Credit Card Platform</a></li>
+                <li><a href="/projects/Googleslides.html" target="_blank">Google Slides Research</a></li>
+                
+                </ul>
+                <ul class="project_info">
+                <h3>More Work<h3>
+                <li><a href="/projects/FamilyMart.html" target="_blank">FamilyMart</a></li>
+                <li><a href="/projects/LeapNews.html" target="_blank">Leap News</a></li>
+                <li><a href="/projects/DesignThinking.html" target="_blank">Design Thinking</a></li>
+                <li><a href="/projects/Wcag.html" target="_blank">WCAG Research</a></li>
+                </ul>
+                <ul>
+                <h3>Follow Me</h3>
+                <div class="contact_icons">
+                    
+                    <a href="https://www.linkedin.com/in/zoeyiu0821/" target="_blank"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
+                    <a href="https://zoeyuchat.wordpress.com" target="_blank"><i class="fa-brands fa-wordpress" id="wordpress"></i></a>
+                </div>
+                </ul>
+            </div>
+            </div>
+        </footer>
+        <div class="pagetransition">
+            <div class="transition_text">
+              <p>Let's Work Together</p>
+            </div>
+        </div>
+        <script src="../js/general.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    </body>
+</html>

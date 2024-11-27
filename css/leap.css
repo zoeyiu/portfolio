@@ -1,0 +1,322 @@
+.Uresearch h3, .ux h3{
+    margin-top: 2%;
+}
+
+.Com, .feature{
+    max-width: 100%;
+}
+
+.Com img, .feature img{
+    max-height: 100%;
+    max-width:100% ;
+    object-fit: cover;
+    
+}
+
+.Uresearch h2{
+  margin-top: 5%;
+}
+/* 黑色遮罩 */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* 放大圖片 */
+.zoomed-image {
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+}
+
+/* 關閉按鈕 */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 2%;
+}
+
+
+/*Insight*/
+.insight-container{
+  max-width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.container {
+  flex: 1;
+  position: relative;
+  height: 300px;
+  background-color: white;
+  
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+}
+
+.box {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  transform: translate(-260%, 0) rotate(0deg) scale(1); /* 初始設置：左側+旋轉0度 */
+  
+  transition: all 1s ease;
+  overflow: hidden; 
+}
+
+
+
+/* 旋转动画 */
+@keyframes rotate-in {
+  0% {
+    transform: translate(-120%, 0) rotate(0deg); /* 起始位置 */
+  }
+  25% {
+    transform: translate(-90%, 0) rotate(90deg); /* 第一次旋转 */
+  }
+  50% {
+    transform: translate(-60%, 0) rotate(180deg); /* 第二次旋转 */
+  }
+  75% {
+    transform: translate(-30%, 0) rotate(270deg); /* 第三次旋转 */
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg); /* 第四次旋转到中心 */
+  }
+}
+
+/* 放大动画 */
+@keyframes expand {
+  0% {
+    transform: scale(1);
+    background-color: #007bff;
+  }
+  100% {
+    transform: scale(5);
+    background-color: #02409e;
+  }
+}
+
+.box.active {
+  animation: rotate-in 2s ease forwards;
+}
+
+.box.expand {
+  animation: expand 1s ease forwards;
+}
+
+.box.expand span {
+  opacity: 0;
+}
+
+
+
+.box.expand::after {
+  content: attr(data-text);
+  position: absolute;
+  font-size: 0.3rem;
+  color: #fff;
+  font-weight: bold;
+  opacity: 1; /* 确保文字显示 */
+  max-width: 100%; /* 限制文字宽度 */
+  overflow: hidden;
+  text-overflow: ellipsis; /* 防止文字溢出显示 */
+  word-wrap: break-word; /* 自动换行 */
+  padding: 3px; /* 给文字一些内边距 */
+  text-align: center; /* 文字居中 */
+}
+
+
+/**/
+.meetcontainer{
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  gap: 20px; 
+}
+
+.meetcontainer div {
+  flex: 1; /* 每個圖片平分可用空間，可根據需要調整 */
+  text-align: center; /* 讓圖片居中 */
+}
+
+.meetcontainer img{
+  max-height: 100%;
+  max-width:100% ;
+  object-fit: cover;
+  
+}
+
+
+.design-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.design-box{
+  flex:1;
+  padding: 2%;
+}
+
+.design-box h4 {
+  display: flex;
+  align-items: center; /* 垂直居中 */
+  gap: 10px;
+}
+
+.high{
+  text-align: center;
+  margin-top: 3% !important; 
+  max-width: 100%;  /* 最大寬度，根據需要調整 */
+  margin: 0 auto;  /* 使區域居中 */
+}
+
+.high iframe{
+  width:800px;
+  height:600px;
+}
+
+
+@media (min-width: 630px) and (max-width:1050px) {
+  .high iframe{
+    width:400px;
+    height:600px;
+  }
+
+  .box.expand::after{
+    font-size: 0.15rem;
+  }
+  .box{
+    width: 40px;
+  }
+}
+
+@media (min-width: 500px) and (max-width:629px) {
+  .high iframe{
+    width:300px;
+    height:600px;
+  }
+
+  .insight-container{
+    display: block;
+  }
+
+  .ux h2{
+    margin-top: 5%;
+  }
+
+  .design-container{
+    flex-direction: column;
+    
+  }
+  .ux h3{
+    margin-bottom: 0%;
+  }
+}
+
+
+@media (min-width: 415px) and (max-width:499px) {
+  .high iframe{
+    width:200px;
+    height:600px;
+  }
+
+  .insight-container{
+    display: block;
+  }
+
+  .box{
+    width: 45px;
+  }
+
+  .design-container{
+    flex-direction: column;
+    
+  }
+
+  .ux h2{
+    margin-top: 5%;
+  }
+  .ux h3{
+    margin-bottom: 0%;
+    text-align: left ;
+    
+  }
+
+  .Uresearch h3{
+    text-align: left ;
+  }
+  
+}
+
+
+
+@media (max-width: 414px) {
+
+  .project-image img{
+    object-fit: cover !important;
+    height: 400px !important;
+  }
+
+  .left-wrap {
+    display: none;
+  }
+
+  .design-container{
+    flex-direction: column;
+    padding: 0%;
+  }
+
+  .insight-container{
+    display: block;
+  }
+
+  .ux h2{
+    margin-top: 5%;
+  }
+
+  .ux h3 {
+    margin-bottom: 2%;
+  }
+  .main-content{
+    flex-basis: fit-content !important;
+    padding: 3% !important;
+    margin-right: 0% !important;
+  }
+  .high iframe{
+    width:300px;
+    height:500px;
+  }
+
+  .title-container h1{
+    font-size: 2rem;
+  }
+  .title-container h3{
+    font-size: 1rem !important;
+  }
+}

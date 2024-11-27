@@ -1,0 +1,341 @@
+.project-image {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.project-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.video-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-mask video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 3%;
+}
+
+.mask-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* 可调整透明度和颜色 */
+    z-index: 1;
+}
+
+.video-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+}
+
+
+/*Nielsen*/
+.Methodology-section2{
+    display: flex;
+    flex-direction: column;
+}
+
+.neilsen{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between; /* 均分容器，讓卡片之間保持一致間距 */
+    gap: 10px; /* 卡片間距 */
+    flex: 1;  /* 確保父容器可以自由伸展 */
+    width: 100%;  /* 確保父容器的寬度為100% */
+}
+
+.neilsen-card{
+    display: flex; /* 啟用 flexbox 來居中內容 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    flex:1;
+    border-radius: 10px;
+    background-color: #9A8F93;
+    color:white;
+    padding: 8px; /* 為卡片增加內邊距 */
+    text-align: center; 
+    margin: 10px 0;
+    height: 200px;
+    font-weight: 700;
+    position: relative; /* 用於定位翻轉內容 */
+    perspective: 1000px; /* 設置透視效果 */
+    
+    
+}
+
+.neilsen-card p {
+    z-index: 2; /* 確保文字顯示在卡片正面 */
+}
+/* 翻轉效果 */
+
+.neilsen-card:hover {
+    transform: rotateY(180deg); /* 卡片翻轉 */
+    perspective: 1000px;
+    
+    background-color:#20459F;
+}
+
+/* 翻轉後顯示的內容 */
+.neilsen-card::before {
+    content: attr(data-hover); /* 使用 data-hover 屬性來顯示翻轉後的文字 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(180deg); /* 文字旋轉和居中 */
+    font-size: 14px;
+    color: black;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    width: 80%;
+    
+    color:white;
+    
+}
+
+/* 當卡片翻轉時顯示文字 */
+.neilsen-card:hover::before {
+    opacity: 1;
+    visibility: visible;
+    
+    
+}
+
+/* 翻轉前的內容 */
+.neilsen-card p {
+    position: relative;
+    z-index: 1; /* 保證正面的文字顯示在前 */
+}
+
+/* 當卡片翻轉時，正面的文字隱藏 */
+.neilsen-card:hover p {
+    opacity: 0;
+}
+
+.caption-container {
+    text-align: center;
+    transform: skewX(-10deg);
+}
+
+.caption-container a {
+    text-decoration: none; /* 去除鏈接的下劃線 */
+    color: #b6b6b6; /* 可根據需要調整顏色 */
+    
+}
+
+.HTA{
+    max-width: 100%;
+}
+
+.HTA-container{
+    max-width: 100%;
+}
+
+.HTA-container img{
+    max-height: 100%;
+    max-width:100% ;
+    object-fit: cover;
+}
+
+.evaluation-section {
+    margin-top: 5%;
+}
+
+/*expert*/
+.block1 {
+    display: flex;
+    flex-direction: column; /* 使 .block1 裡面的內容上下排列 */
+    
+}
+
+.block1-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.compliance h3, .violation h3, .think-aloud-section h3{
+    margin-top:3%;
+    margin-bottom:0%;
+}
+
+.block1 h4 {
+    text-align: left;
+    margin-top:3%;
+    margin-bottom: 2%;
+}
+
+
+.fig1, .fig2 {
+    display: flex;
+    flex-direction: column; /* 讓 .fig1 和 .fig2 裡面的內容上下排列 */
+    align-items: center;
+    max-width: 100%; /* 確保圖片不會超出容器 */
+    border: 1px solid #ddd; /* 添加邊框方便查看容器大小 */
+    padding: 5px;
+    box-sizing: border-box;
+    flex: 1; /* 確保 .fig1 和 .fig2 等寬 */
+}
+
+.fig1 p, .fig2 p {
+    text-align: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.fig1 img, .fig2 img {
+    max-width: 100%; /* 確保圖片不會超過容器寬度 */
+    height: auto; /* 確保圖片按比例縮放 */
+    border-radius: 8px; /* 圖片邊角圓角效果（可選） */
+}
+
+.block1 > p {
+    margin:0;
+    margin-bottom: 1%; 
+}
+
+.think-aloud-section {
+   margin-top: 5%;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 950px){
+
+   
+    .neilsen-card {
+        flex: 1 1 25%; /* 每行顯示兩個卡片 */
+    }
+    
+}
+
+
+
+
+@media (min-width: 415px) and (max-width: 767px){
+
+    .main-content{
+        margin-right: 0 !important;
+    }
+
+    .block1-container{
+        flex-direction: column;
+    }
+
+    h2, h3, h4{
+        text-align: left; 
+        
+    }
+
+    .video-title{
+        text-align: center !important;
+        font-size: 1.5rem;
+    }
+
+    .Methodology-section2{
+        justify-content: center; /* 水平居中卡片 */
+        align-items: center; /* 垂直居中卡片 */
+    }
+    .neilsen{
+        display: flex;
+        flex-wrap: wrap; /* 允許換行 */
+        /* width: 200px;
+        height: 150px; */
+        
+        
+    }
+
+    .neilsen-card {
+        flex: 1 1 30%; /* 每個卡片佔一半的寬度，並允許調整 */
+        margin-bottom: 10px; /* 底部間距 */
+        /* width: 200px;
+        height: 150px; */
+        
+    }
+    .block1-container{
+        
+        flex-direction: column;
+    }
+}
+
+@media (max-width:414px){
+
+    .Methodology-section2{
+        justify-content: center; /* 水平居中卡片 */
+        align-items: center; /* 垂直居中卡片 */
+    }
+    .neilsen{
+        display: flex;
+        flex-wrap: wrap; /* 允許換行 */
+        width: 250px;
+        height: 150px;
+        
+        
+    }
+
+    .neilsen-card {
+        flex: 1 1 48%; /* 每個卡片佔一半的寬度，並允許調整 */
+        margin-bottom: 10px; /* 底部間距 */
+        width: 250px;
+        height: 150px;
+        
+    }
+    .block1-container{
+        
+        flex-direction: column;
+    }
+
+    
+    h2, h3, h4{
+        text-align: left !important; 
+        margin-top: 5% !important;
+    }
+
+    .video-title{
+        text-align: center !important;
+        font-size: 1.5rem;
+    }
+
+    .project-image{
+        height: 300px !important;
+    }
+    .left-wrap{
+        display: none;
+    }
+
+    .main-content{
+        flex-basis: fit-content !important; 
+        padding: 3% !important;
+        margin-right: 0% !important;
+        
+    }
+    .title-container h1{
+        font-size: 2rem;
+      }
+      .title-container h3{
+        font-size: 1rem !important;
+      }
+}

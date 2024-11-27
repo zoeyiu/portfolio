@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+  }
+  
+.title-container {
+    margin-bottom: 20px;
+  }
+  
+  .protected-content {
+    display: none;
+  }
+  
+  .input-container {
+    margin-top: 20px;
+  }
+  
+  .input-container input {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .input-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+    display: none; /* 默认隐藏 */
+  }
+  

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Zoe Yiu | Portfolio</title>
+    <!--CSS Link-->
+    <link rel="stylesheet" href="../css/general_style.css" />  
+    
+    <link rel="stylesheet" href="../css/bliss.css" />
+    <link rel="stylesheet" href="../css/contentTemplate.css" />
+    <!--logo Link-->
+    <link rel="icon" href="../media/logo2.png" type="image/png" />
+    <!--Google Font-Montserrat & Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!--font-awesome: https://fontawesome.com/-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <div class="loading-transition2"></div>
+  <body class="main" style="opacity: 0;">
+        
+        <div class="mouse-follower"></div>
+        <header>
+            <a href="/index.html" class="page-link">
+                <img src="/media/logo.png" alt="Zoe Portfolio Logo" class="logo" />
+            </a>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </header>
+        <div class="full-screen-menu" id="fullScreenMenu">
+        <div class="close" onclick="toggleMenu()">&times;</div>
+        <nav>
+            <a href="/index.html" class="page-link" onclick="toggleMenu()">Homepage</a>
+            <a href="../about/about.html" class="page-link" onclick="toggleMenu()">About Me</a>
+            <a href="../projects/projects.html" class="page-link" onclick="toggleMenu()">Projects</a>
+            <a href="https://drive.google.com/file/d/1WoH3im1om005fSyAxdIr6alMYU4Ekc-2/view?usp=sharing" target="_blank" onclick="toggleMenu()">Resume</a>
+            <!--記得要改連結 -->
+            <a href="/contact/contact.html" class="page-link" onclick="toggleMenu()">Contact Me</a>
+        </nav>
+        </div>
+        <main >
+            <section class="title-container">
+                <h1>Designing for Wellness: BlissLife Platform</h1>
+                <h3>UX DESIGN | UI DESIGN | WEB DEVELOPMENT</h3>
+            </section>
+            <section class="project-image">
+                <img src="../media/BlissLife.jpg" alt="BlissLife Cover">
+            </section>
+            <section class="project-container">
+                <section class="left-wrap">
+                    <ul class="overview-menu">
+                        <li class="overview">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text" >Overview</span>
+                        </li>
+                        <li  class="role-tool">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">Role&Toolkit</span>
+                        </li>
+                        <li  class="uxdesign">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">UX/UI Design</span>
+                        </li>
+                       
+                        <li  class="frontend">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">Frontend Development</span>
+                        </li>
+                    </ul>
+                </section>
+                <div class="main-content">
+                    <section class="project-overview" id="overview">
+                        <section class="section1">
+                            <h2><i class="fa-solid fa-caret-right"></i>Project Overview</h2>
+                            <p>
+                                The fictional client, a leading provider of in-person health services, 
+                                seeks to expand into the online market with the development of a wellness 
+                                platform. This website will initially offer freemium services, giving 
+                                users access to valuable wellness resources at no cost, with plans to 
+                                introduce a premium subscription model for enhanced features. The platform 
+                                will provide a variety of wellness resources, including articles, videos, 
+                                and guides on health topics, along with community support and organized 
+                                events to foster engagement.
+                            </p>
+                        </section>
+                        <section class="section2" id="role-tool">
+                            <div class="role">
+                                <h2><i class="fa-solid fa-caret-right"></i>Role</h2>
+                                <p> UX/UI Designer <br>
+                                    Web Developer <br>
+                                </p>
+                            </div>
+                            <div class="toolkit">
+                                <h2><i class="fa-solid fa-caret-right"></i>Toolkit</h2>
+                                <p>Figma / Wireframe / Prototype <br>
+                                    HTML / CSS / Javascript <br>
+                                </p>
+                            </div>
+                        </section>
+                    </section>
+                    <section class="UX-Design" id="uxdesign">
+                        <h2><i class="fa-solid fa-caret-right"></i>UX/UI Design</h2>
+                        <div class="research-container">
+                            <div class="story">
+                                <h3>User Story</h3>
+                                <div class="story-big">
+                                    <div class="story-card">
+                                        <div class="story-circle"></div>
+                                        <div class="story-content">
+                                            <h4>Alice</h4>
+                                            <p>As a visually impaired educator, 
+                                                I want an accessible website that contains 
+                                                affordable events and informative resources, 
+                                                so that users can participate in wellness community 
+                                                activities to enhance a sense of social belonging and 
+                                                maintain mental health. </p>
+
+                                        </div>
+                                        <img src="../media/AvatarMaker.png">
+                                    </div>
+                                    <div class="story-card">
+                                        <div class="story-circle"></div>
+                                        <div class="story-content">
+                                            <h4>Lily</h4>
+                                            <p>As a fast-paced agency professional, I want a wellness site 
+                                                with beginner-friendly yoga and stress-relief techniques, 
+                                                so I can easily add mindfulness to my routine and manage the 
+                                                demands of my job for better physical and mental well-being. </p>
+
+                                        </div>
+                                        <img src="../media/AvatarMaker2.png">
+                                    </div>
+                                    
+                                </div>
+                                <div class="story-big">
+                                    <div class="story-card">
+                                        <div class="story-circle"></div>
+                                        <div class="story-content">
+                                            <h4>Kevin</h4>
+                                            <p>As a teacher and single father of two boys, 
+                                                I want a wellness website, having opportunities for social 
+                                                activities to help expand my social circle, as my time is usually 
+                                                spent balancing work and parenting. This would allow me to connect 
+                                                with others. </p>
+
+                                        </div>
+                                        <img src="../media/AvatarMaker3.png">
+                                    </div>
+                                    <div class="story-card">
+                                        <div class="story-circle"></div>
+                                        <div class="story-content">
+                                            <h4>Jeff</h4>
+                                            <p>As an office worker, I enjoy exercising after work, and I want a wellness 
+                                                website with diverse topics, including healthy food options, 
+                                                so I can stay informed and find content that fits my commute r
+                                                eading routine. </p>
+
+                                        </div>
+                                        <img src="../media/AvatarMaker4.png">
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="consideration">
+                                <h3>Design Consideration</h3>
+                                <div class="consideration-cards">
+                                    <div class="con-card" data-hover="Offer diverse multimedia content to engage users and build trust.">
+                                        <p>Content Diversity</p>
+                                    </div>
+                                    <div class="con-card" data-hover="To navigate seamlessly, the navigation menu and the footer are designed to find what they want effortlessly.">
+                                        <p>Clear Navigation</p>
+                                    </div>
+                                    <div class="con-card" data-hover="Adjustable font size and alternative text ensure the website is accessible to users with disabilities, including those using screen readers.">
+                                        <p>Accessibility</p>
+                                    </div>
+                                    <div class="con-card" data-hover="Blue tone and white background are selected as primary colors that build an experience with trust, transparency and  professionalism.">
+                                        <p>Color Psychology</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="features">
+                                <h3>Key Features</h3>
+                                <table style="border: 1px solid black; border-collapse: collapse;">
+                                    <thead>
+                                      <tr>
+                                        <th style="border: 1px solid black; padding: 8px; background-color: rgb(234, 234, 234);">Feature</th>
+                                        <th style="border: 1px solid black; padding: 8px; background-color: rgb(234, 234, 234);">Description</th>
+                                        
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td rowspan="1" style="border: 1px solid black; padding: 8px;">Menu & Footer</td>
+                                        <td style="border: 1px solid black; padding: 8px;">The navigation menu highlights key features for easy exploration, while the footer provides secondary links, contact info, and categories for better accessibility and additional information.</td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <td rowspan="1" style="border: 1px solid black; padding: 8px;">Search</td>
+                                        <td style="border: 1px solid black; padding: 8px;">Search feature allows users to locate specific information quickly without manually using the navigation menu.</td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <td rowspan="1" style="border: 1px solid black; padding: 8px;">Filtering </td>
+                                        <td style="border: 1px solid black; padding: 8px;">Allow users to filter specific event types aligning with their affordability without extensive searchers.</td>
+                                      </tr>
+                                      <tr>
+                                        <td rowspan="1" style="border: 1px solid black; padding: 8px;">Event Booking </td>
+                                        <td style="border: 1px solid black; padding: 8px;">The events on the website provide a way for users to join various wellness events.</td>
+                                      </tr>
+                                      <tr>
+                                        <td rowspan="1" style="border: 1px solid black; padding: 8px;">Multi-media Content </td>
+                                        <td style="border: 1px solid black; padding: 8px;">The website offers professional wellness advice and tutorials through interactive multimedia content like videos, images, audio, and text, enhancing user engagement and encouraging longer visits.</td>
+                                      </tr>
+                                      <tr>
+                                        <td rowspan="1" style="border: 1px solid black; padding: 8px;">Newsletter Subscription</td>
+                                        <td style="border: 1px solid black; padding: 8px;">To keep in touch with users, newsletter subscription can collect users' contact, so they can receive the latest information that also meets users' needs for raising a healthy lifestyle awareness. </td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="Wireframe">
+                                <h3>Wireframe</h3>
+                            
+                                <img src="../media/BlissWireframe.jpg" alt="Wireframe" />
+                            </div>
+                            <div class="overlay" id="overlay">
+                                <button class="close-btn" id="closeBtn">X</button>
+                                <img id="zoomedImage" class="zoomed-image" src="" alt="Zoomed Image">
+                            </div>
+                            <div class="ui">
+                                <h3>High-Fidelity Prototype</h3>
+                                
+                                <div class="webpage">
+                                    <div class="title-bar">
+                                        <div class="buttons">
+                                            <span class="button closepage"></span>
+                                            <span class="button minimize"></span>
+                                            <span class="button maximize"></span>
+                                        </div>
+                                        <div class="title">My Mini Webpage</div>
+                                    </div>
+                                    <div class="content">
+                                        
+                                        <div class="scroll-box">
+                                            <img src="../media/BlissHome.png" alt="Prototype 1">
+                                            <img src="../media/BlissEvent.png" alt="Prototype 2">
+                                            <img src="../media/BlissEventInfo.png" alt="Prototype 3">
+                                            <img src="../media/BlissBlog.png" alt="Prototype 4">
+                                            <img src="../media/BlissAbout.html.png" alt="Prototype 5">
+                                            
+                                        </div>
+                                        
+                                    </div>  
+                                    
+                                </div>
+                                <div class="arrows">
+                                    <div class="arrow left-arrow" onclick="prevImage()">&#10094;</div>
+                                    <div class="arrow right-arrow" onclick="nextImage()">&#10095;</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </section>
+                    <section class="Frontend" id="frontend">
+                        <h2><i class="fa-solid fa-caret-right"></i>Frontend Development</h2>
+                        <div class="Fnsection">
+                            <div class="webpage-small">
+                                
+                                <div class="box-content">
+                                    <div class="box">
+                                        <video src="../media/BlissBanner.mov" autoplay loop muted playsinline></video>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h3>Carousel Banner</h3>
+                                <p>The banner design goes beyond static images, incorporating 
+                                    videos and carousel slides to enhance the overall visual 
+                                    appeal of the website and attract users. The banner in the 
+                                    homepage contains “Call to Action” buttons to encourage user 
+                                    interaction and guide users to relevant sections of the website.  
+                                </p>
+                            </div>
+                        </div>
+                        <div class="Fnsection">
+                            <div class="webpage-small">
+                                
+                                <div class="box-content">
+                                    <div class="box">
+                                        <video src="../media/Event.mp4" autoplay loop muted playsinline></video>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h3>API Integration & Filter Function & Page Pagination</h3>
+                                <p>Event data, including images, dates, categories, and times, is fetched via 
+                                    an API. Default images are provided when none are available in the database 
+                                    to prevent blank spaces. Users can upload their own events, and the content 
+                                    is updated through the API. A filter for event categories was created to help 
+                                    users find events based on their preferences.
+                                </p>
+                                
+                                <p>Events are displayed using a Card UI design for easy content comprehension. 
+                                    A paginated layout shows 16 cards per page in a 4x4 grid, with JavaScript 
+                                    automatically generating new cards as event data is added. This ensures 
+                                    efficient handling of increasing events. The pagination also updates dynamically 
+                                    when users apply filters, displaying only the relevant cards and recalculating 
+                                    the number of pages needed.</p>
+                            </div>
+                            
+                        </div>
+                        
+                
+                        <div class="Fnsection">
+                            <div class="webpage-small">
+                                
+                                <div class="box-content">
+                                    <div class="box">
+                                        <video src="../media/responsive.mp4" autoplay loop muted playsinline></video>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h3>Responsive Design</h3>
+                                <p>The website is designed to be fully responsive, ensuring a consistent 
+                                    and user-friendly experience across all devices, from desktops, 
+                                    tablets to mobile phones. The layout adjusts dynamically to different 
+                                    screen sizes, maintaining readability and functionality for all users.
+                                </p>   
+                            </div>                        
+                        </div>
+                        <div class="Fnsection">
+                            <div class="webpage-small">
+                                
+                                <div class="box-content">
+                                    <div class="box">
+                                        <video src="../media/acc.mp4" autoplay loop muted playsinline></video>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h3>Accessibility</h3> 
+                                <p>The website implements WCAG guidelines to ensure accessibility for all users, 
+                                    including those with disabilities. Key features include high text contrast for 
+                                    readability, descriptive alt text for all images to assist screen readers, 
+                                    full keyboard navigation for easy site access, and the use of ARIA roles for 
+                                    better structure and navigation. These elements contribute to creating an 
+                                    inclusive user experience.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="Fnsection">
+                            <div class="webpage-small">
+                                
+                                <div class="box-content">
+                                    <div class="box">
+                                        <video src="../media/read.mov" autoplay loop muted playsinline></video>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h3>Readability</h3>
+                                <p>
+                                    To enhance accessibility for users with vision impairments, a font size adjustment 
+                                    feature was implemented. By clicking a button, users can dynamically increase or 
+                                    decrease the font size of the content to suit their individual preferences and needs. 
+                                    The design prioritizes inclusivity, ensuring that all users can navigate the content 
+                                    effectively regardless of their visual abilities.
+                                </p>   
+                            </div>                        
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="wrapper">
+            <div class="row"></div>
+            <div class="container_info">
+                <ul class="info">
+                <h3>Contact Information<h3>
+                <p>Feel free to reach out to me any time.</p>
+                <p><a href="mailto:zoeyiu0821@gmail.com">zoeyiu0821@gmail.com</a></p>  
+                </ul>
+                <ul class="project_info">
+                <h3>Featured Projects<h3>
+                <li><a href="/projects/ZenZzz.html" target="_blank">ZenZzz</a></li>
+                <li><a href="/projects/BlissLife.html" target="_blank">BlissLife</a></li>
+                <li><a href="/projects/CreditCard.html" target="_blank">Credit Card Platform</a></li>
+                <li><a href="/projects/Googleslides.html" target="_blank">Google Slides Research</a></li>
+                
+                </ul>
+                <ul class="project_info">
+                <h3>More Work<h3>
+                <li><a href="/projects/FamilyMart.html" target="_blank">FamilyMart</a></li>
+                <li><a href="/projects/LeapNews.html" target="_blank">Leap News</a></li>
+                <li><a href="/projects/DesignThinking.html" target="_blank">Design Thinking</a></li>
+                <li><a href="/projects/Wcag.html" target="_blank">WCAG Research</a></li>
+                </ul>
+                <ul>
+                <h3>Follow Me</h3>
+                <div class="contact_icons">
+                    
+                    <a href="https://www.linkedin.com/in/zoeyiu0821/" target="_blank"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
+                    <a href="https://zoeyuchat.wordpress.com" target="_blank"><i class="fa-brands fa-wordpress" id="wordpress"></i></a>
+                </div>
+                </ul>
+            </div>
+            </div>
+        </footer>
+        <div class="pagetransition">
+            <div class="transition_text">
+              <p>Let's Work Together</p>
+            </div>
+        </div>
+        <script src="../js/general.js"></script>
+        <script src="../js/Bliss.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Zoe Yiu | Portfolio</title>
+    <!--CSS Link-->
+    <link rel="stylesheet" href="../css/general_style.css" />  
+    <link rel="stylesheet" href="../css/family.css" />
+    <link rel="stylesheet" href="../css/contentTemplate.css" />
+    <!--logo Link-->
+    <link rel="icon" href="../media/logo2.png" type="image/png" />
+    <!--Google Font-Montserrat & Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!--font-awesome: https://fontawesome.com/-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <div class="loading-transition2"></div>
+  <body class="main" style="opacity: 0;">
+        
+        <div class="mouse-follower"></div>
+        <header>
+            <a href="/index.html" class="page-link">
+                <img src="/media/logo.png" alt="Zoe Portfolio Logo" class="logo" />
+            </a>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </header>
+        <div class="full-screen-menu" id="fullScreenMenu">
+        <div class="close" onclick="toggleMenu()">&times;</div>
+        <nav>
+            <a href="/index.html" class="page-link" onclick="toggleMenu()">Homepage</a>
+            <a href="../about/about.html" class="page-link" onclick="toggleMenu()">About Me</a>
+            <a href="../projects/projects.html" class="page-link" onclick="toggleMenu()">Projects</a> <!--記得做完要改-->
+            <a href="https://drive.google.com/file/d/1WoH3im1om005fSyAxdIr6alMYU4Ekc-2/view?usp=sharing" target="_blank" onclick="toggleMenu()">Resume</a>
+            <a href="/contact/contact.html" class="page-link" onclick="toggleMenu()">Contact Me</a>
+        </nav>
+        </div>
+        <main >
+            <section class="title-container">
+                <h1>Redesign of Taiwan's Second Largest Convenience Store Brand App</h1>
+                <h3>UX Research | UX Design | UI Design</h3>
+            </section>
+            <section class="project-image">
+                <img src="../media/FamilyMart_Cover.jpg" alt="FamilyMart Image Cover" /> 
+            </section>
+            <section class="project-container">
+                <section class="left-wrap">
+                    <ul class="overview-menu">
+                        <li class="overview">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text" >Overview</span>
+                        </li>
+                        <li  class="scope">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">Project Scope</span>
+                        </li>
+                        <li  class="role">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">Role</span>
+                        </li>
+                        <li  class="research">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">Usability Test</span>
+                        </li>
+                        
+                        <li  class="pro">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">Problems</span>
+                        </li>
+                        <li  class="chall">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">Challenges</span>
+                        </li>
+                        <li  class="redesign">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">Redesign - Order Process</span>
+                        </li>
+                        <li  class="redesign2">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">Redesign - Gifting</span>
+                        </li>
+                    </ul>
+                </section>
+                <div class="main-content">
+                    <section class="project-overview" id="overview">
+                        <h2 ><i class="fa-solid fa-caret-right "></i>Overview</h2>
+                        <p>Taiwan's second-largest convenience store chain, FamilyMart, 
+                            launched its app in 2016, and it has since been downloaded 
+                            over 6 million times. The app offers features like mobile payment, 
+                            online shopping, coffee pre-orders, and digital coupons. Despite 
+                            its popularity, the app has received relatively low ratings, with 
+                            a 3.4/5 on Google Play and 2.7/5 on the App Store. Because of this, 
+                            I decided to take on a side project to redesign the FamilyMart app.</p>
+                    </section>
+                    <section class="project_scope" id="scope">
+                        <h2 ><i class="fa-solid fa-caret-right "></i>Project Scope</h2>
+                        <p>FamilyMart app develops consumer loyalty programs and integrate online 
+                            and offline consumption scenarios for standing out in a highly competitive market. 
+                            Its vision of seamless shopping experience allows customers to browse featured products 
+                            and new launches and easily order right away. Two main redesign missions are selected:
+                        </p>
+                        <p>(1) Ordering Process
+                        <br>
+                        (2) Purchased Items Transferring Process</p>
+                    </section>
+                    <section class="Role" id="role">
+                        <h2 ><i class="fa-solid fa-caret-right "></i>Role</h2>
+                        <p>UX Researcher
+                        <br> UI/UX Designer
+                        </p>
+                    </section>  
+                    <section class="userresearch" id="research">
+                        <h2 ><i class="fa-solid fa-caret-right "></i>Usability Test</h2>
+                        <h3>Tasks</h3>
+                        <p>In the user research phase, I conducted usability test with 4 participants and assigned them three tasks to evaluate the FamilyMart app. 
+                            The tasks were: <br>
+                            (1) Locating the feature of gifting products to a friend. <br> 
+                            (2) Ordering Process: Adding Wandan Milk to the cart and completing an online payment <br> 
+                            (3) Gifting Process: Transferring an item to a friend.
+                        </p>
+                        <h3>Key Findings</h3>
+                        <p>
+                            <strong>Feature Accessibility Issues</strong> <br>
+
+                            - Participants faced challenges locating the "Gifting to a Friend" feature on the homepage.<br>
+                            - The feature was not visually distinct, with unclear button placement and color, causing delays and confusion.<br>
+                            <br>
+                            <strong>Feature Confusion Between Similar Pages </strong> <br>
+                            
+                            - Users reported difficulty distinguishing between the "Redeem my Order" page and the "Gifting to a Friend" page.<br>
+                            - Despite being functionally different, the pages shared similar layouts and design elements, leading to user uncertainty about their purpose.
+                            <br>
+                            <br>
+                            <Strong>Complex Pricing Information</strong> <br>
+                            - Participants expressed frustration with the pricing information displayed during the ordering and gifting processes.<br>
+                            - The interface presented excessive numerical details, making it hard for users to identify key pricing elements such as total cost or discounts.<br>
+                        </p>
+                        
+                    </section>
+                    <section class="problem" id="pro">
+                        <h2 ><i class="fa-solid fa-caret-right "></i>Design Problems</h2>
+                        <p>Several key design issues were identified, look below </p>
+                        <div class="carousel-container">
+                            <div class="carousel">
+                              <img src="../media/Problem_HomepageDescription.jpg" alt="Image 1" class="carousel-item active">
+                              <img src="../media/Problem_HomepageProblem.jpg" alt="Image 2" class="carousel-item">
+                              <img src="../media/Problem_Gifting.jpg" alt="Image 3" class="carousel-item">
+                              <img src="../media/Problem_GiftingProblem.jpg" alt="Image 4" class="carousel-item">
+                            </div>
+                            <div class="overlay" id="overlay">
+                                <button class="close-btn" id="closeBtn">X</button>
+                                <img id="zoomedImage" class="zoomed-image" src="" alt="Zoomed Image">
+                            </div>
+                            <button class="carousel-btn left-btn">❮</button>
+                            <button class="carousel-btn right-btn">❯</button>
+                        </div>                          
+                    </section>
+                    <section class="challenge" id="chall">
+                        <h2 ><i class="fa-solid fa-caret-right "></i>Design Challenges</h2>
+                        <p> <strong>(1) Diverse Digital Services:</strong><br>
+                            Taiwan's convenience stores offer highly versatile digital services. 
+                            For example, customers can use the app to pre-purchase multiple coffees 
+                            through the "Buy Now, Pick Up at Any Store" service, which allows them to 
+                            pick up their orders across different store locations and on different days. 
+                            Another service, "Buy Now, Pickup Later" lets users pre-order items online and 
+                            collect them from a designated store near their home.
+                        </p>
+                        <p><strong>(2) Complex Pricing and Purchase Strategies:</strong><br>
+                            Taiwan's convenience store culture includes unique promotions, 
+                            such as discounts for bulk coffee purchases. However, 
+                            chains often limit options to fixed quantities (e.g., 15, 25, or 50 cups) that must be paid 
+                            for upfront but can be picked up in batches. Additionally, pricing strategies vary significantly 
+                            across product types. For instance, green tea may require a minimum purchase of six bottles at 
+                            a set price, whereas soda is typically priced per bottle. The inconsistent pricing and quantity 
+                            requirements create challenges in designing user-friendly and flexible systems.
+                        </p>
+                        <p><strong>(3) Gifting Services:</strong><br>
+                            Taiwan's convenience stores also provide a service that allows customers to purchase 
+                            coffee or beverages and send them as gifts to others. This adds an extra layer of complexity 
+                            to the system, as it requires seamless integration of product selection, recipient details, 
+                            and notifications while maintaining an intuitive user experience.
+                        </p>
+                    </section>
+                    <section class="design" id="redesign">
+                        <h2 ><i class="fa-solid fa-caret-right "></i>Redesign - Ordering Process</h2>
+                        
+                        <h4>Shopping Page</h4>
+                        <div class="carousel-container">
+                            <div class="carousel">
+                              <img src="../media/Redesign_1_1.jpg" alt="Image 1" class="carousel-item active">
+                              <img src="../media/Redesign_1_2.jpg" alt="Image 2" class="carousel-item">
+                              <img src="../media/Redesign_1_3.jpg" alt="Image 3" class="carousel-item">
+                              
+                            </div>
+                            <div class="overlay" id="overlay">
+                                <button class="close-btn" id="closeBtn">X</button>
+                                <img id="zoomedImage" class="zoomed-image" src="" alt="Zoomed Image">
+                            </div>
+                            <button class="carousel-btn left-btn">❮</button>
+                            <button class="carousel-btn right-btn">❯</button>
+                        </div>              
+                        <h4>Select Product's Size and Quantity</h4>
+                        <div class="carousel-container">
+                            <div class="carousel">
+                              <img src="../media/Redesign_2_1.jpg" alt="Image 1" class="carousel-item active">
+                              <img src="../media/Redesign_2_2.jpg" alt="Image 2" class="carousel-item">
+                              <img src="../media/Redesign_2_3.jpg" alt="Image 3" class="carousel-item">
+                            </div>
+                            <div class="overlay" id="overlay">
+                                <button class="close-btn" id="closeBtn">X</button>
+                                <img id="zoomedImage" class="zoomed-image" src="" alt="Zoomed Image">
+                            </div>
+                            <button class="carousel-btn left-btn">❮</button>
+                            <button class="carousel-btn right-btn">❯</button>
+                        </div>  
+                        <h4>Shopping Cart</h4>
+                        <div class="carousel-container">
+                            <div class="carousel">
+                              <img src="../media/Redesign_3_1.jpg" alt="Image 1" class="carousel-item active">
+                              <img src="../media/Redesign_3_2.jpg" alt="Image 2" class="carousel-item">
+                              <img src="../media/Redesign_3_3.jpg" alt="Image 3" class="carousel-item">
+                            </div>
+                            <div class="overlay" id="overlay">
+                                <button class="close-btn" id="closeBtn">X</button>
+                                <img id="zoomedImage" class="zoomed-image" src="" alt="Zoomed Image">
+                            </div>
+                            <button class="carousel-btn left-btn">❮</button>
+                            <button class="carousel-btn right-btn">❯</button>
+                        </div>  
+                        <h4>Pay</h4>
+                        <div class="carousel-container">
+                            <div class="carousel">
+                              <img src="../media/Redesign_4_1.jpg" alt="Image 1" class="carousel-item active">
+                              <img src="../media/Redesign_4_2.jpg" alt="Image 2" class="carousel-item">
+                              <img src="../media/Redesign_4_3.jpg" alt="Image 3" class="carousel-item">
+                            </div>
+                            <div class="overlay" id="overlay">
+                                <button class="close-btn" id="closeBtn">X</button>
+                                <img id="zoomedImage" class="zoomed-image" src="" alt="Zoomed Image">
+                            </div>
+                            <button class="carousel-btn left-btn">❮</button>
+                            <button class="carousel-btn right-btn">❯</button>
+                        </div>  
+                        <h4>Payement Successful</h4>
+                        <div class="carousel-container">
+                            <div class="carousel">
+                              <img src="../media/Redesign_5_1.jpg" alt="Image 1" class="carousel-item active">
+                              <img src="../media/Redesign_5_2.jpg" alt="Image 2" class="carousel-item">
+                              <img src="../media/Redesign_5_3.jpg" alt="Image 3" class="carousel-item">
+                            </div>
+                            <div class="overlay" id="overlay">
+                                <button class="close-btn" id="closeBtn">X</button>
+                                <img id="zoomedImage" class="zoomed-image" src="" alt="Zoomed Image">
+                            </div>
+                            <button class="carousel-btn left-btn">❮</button>
+                            <button class="carousel-btn right-btn">❯</button>
+                        </div>  
+                    </section>
+                    <section class="design" id="redesign2">
+                        <h2 ><i class="fa-solid fa-caret-right "></i>Redesign - Gifting</h2>
+                        <div class="carousel-container">
+                            <div class="carousel">
+                              <img src="../media/Redesign_6_1.jpg" alt="Image 1" class="carousel-item active">
+                              <img src="../media/Redesign_6_2.jpg" alt="Image 2" class="carousel-item">
+                              
+                            </div>
+                            <div class="overlay" id="overlay">
+                                <button class="close-btn" id="closeBtn">X</button>
+                                <img id="zoomedImage" class="zoomed-image" src="" alt="Zoomed Image">
+                            </div>
+                            <button class="carousel-btn left-btn">❮</button>
+                            <button class="carousel-btn right-btn">❯</button>
+                        </div>  
+                    </section>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="wrapper">
+            <div class="row"></div>
+            <div class="container_info">
+                <ul class="info">
+                <h3>Contact Information<h3>
+                <p>Feel free to reach out to me any time.</p>
+                <p><a href="mailto:zoeyiu0821@gmail.com">zoeyiu0821@gmail.com</a></p>  
+                </ul>
+                <ul class="project_info">
+                <h3>Featured Projects<h3>
+                <li><a href="/projects/ZenZzz.html" target="_blank">ZenZzz</a></li>
+                <li><a href="/projects/BlissLife.html" target="_blank">BlissLife</a></li>
+                <li><a href="/projects/CreditCard.html" target="_blank">Credit Card Platform</a></li>
+                <li><a href="/projects/Googleslides.html" target="_blank">Google Slides Research</a></li>
+                
+                </ul>
+                <ul class="project_info">
+                <h3>More Work<h3>
+                <li><a href="/projects/FamilyMart.html" target="_blank">FamilyMart</a></li>
+                <li><a href="/projects/LeapNews.html" target="_blank">Leap News</a></li>
+                <li><a href="/projects/DesignThinking.html" target="_blank">Design Thinking</a></li>
+                <li><a href="/projects/Wcag.html" target="_blank">WCAG Research</a></li>
+                </ul>
+                <ul>
+                <h3>Follow Me</h3>
+                <div class="contact_icons">
+                    
+                    <a href="https://www.linkedin.com/in/zoeyiu0821/" target="_blank"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
+                    <a href="https://zoeyuchat.wordpress.com" target="_blank"><i class="fa-brands fa-wordpress" id="wordpress"></i></a>
+                </div>
+                </ul>
+            </div>
+            </div>
+        </footer>
+        <div class="pagetransition">
+            <div class="transition_text">
+              <p>Let's Work Together</p>
+            </div>
+        </div>
+        <script src="../js/general.js"></script>
+        <script src="../js/family.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    </body>
+</html>

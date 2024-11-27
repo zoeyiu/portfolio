@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Zoe Yiu | Portfolio</title>
+    <!--CSS Link-->
+    <link rel="stylesheet" href="../css/general_style.css" />
+    <link rel="stylesheet" href="../css/googleslide.css" />
+    <link rel="stylesheet" href="../css/contentTemplate.css" />
+    <!--logo Link-->
+    <link rel="icon" href="../media/logo2.png" type="image/png" />
+    <!--Google Font-Montserrat & Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!--font-awesome: https://fontawesome.com/-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <div class="loading-transition2"></div>
+  <body class="main" style="opacity: 0;">
+        
+        <div class="mouse-follower"></div>
+        <header>
+            <a href="/index.html" class="page-link">
+                <img src="/media/logo.png" alt="Zoe Portfolio Logo" class="logo" />
+            </a>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </header>
+        <div class="full-screen-menu" id="fullScreenMenu">
+        <div class="close" onclick="toggleMenu()">&times;</div>
+        <nav>
+            <a href="/index.html" class="page-link" onclick="toggleMenu()">Homepage</a>
+            <a href="../about/about.html" class="page-link" onclick="toggleMenu()">About Me</a>
+            <a href="../projects/projects.html" class="page-link" onclick="toggleMenu()">Projects</a>
+            <a href="https://drive.google.com/file/d/1WoH3im1om005fSyAxdIr6alMYU4Ekc-2/view?usp=sharing" target="_blank" onclick="toggleMenu()">Resume</a>
+            <!--記得要改連結 -->
+            <a href="/contact/contact.html" class="page-link" onclick="toggleMenu()">Contact Me</a>
+        </nav>
+        </div>
+        <main >
+            <section class="title-container">
+                <h1>User Interface Evaluation for Google Slides</h1>
+                <h3>HUMAN-COMPUTER INTERACTION | USABILITY TEST </h3>
+            </section>
+            <section class="project-image">
+                <img src="../media/Googleslides Cover.jpg" />
+                <div class="video-mask">
+                    <video src="../media/GoogleSlide.mp4" autoplay muted loop></video>
+                    <div class="mask-overlay"></div>
+                    <h2 class="video-title" id="videoTitle">Google Slides Design Insights: Transition Settings</h2>
+                </div>
+            </section>
+            <section class="project-container">
+                <section class="left-wrap">
+                    <ul class="overview-menu">
+                        <li class="overview">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text" >Overview</span>
+                        </li>
+                        <li  class="methodology">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">Methodology</span>
+                        </li>
+                        <li  class="htadiagram">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">HTA Diagram</span>
+                        </li>
+                        <li  class="evaluation">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">Expert Evaluation</span>
+                        </li>
+                        <li  class="thinkaloud">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">Think-aloud</span>
+                        </li>
+                        <li  class="takwaway">
+                            <!-- <span class="circle"></span> -->
+                            <span class="text">Take Away</span>
+                        </li>
+                    </ul>
+                </section>
+                <div class="main-content">
+                    <section class="project-overview" id="overview">
+                        <section class="section1">
+                            <h2><i class="fa-solid fa-caret-right"></i>Project Overview</h2>
+                            <p>
+                                This project focuses on the comprehensive evaluation of UI/UX designed 
+                                for setting transitions between slides. The task evaluated was to set three different 
+                                styles of transitions for three different slides with durations of 3.1 seconds, 2 seconds, 
+                                and 1.7 seconds.
+                            </p>
+                        </section>
+                    </section>
+                    <section class="methodologySection" id="methodology">
+                        <section class="Methodology-section1">
+                            <h2><i class="fa-solid fa-caret-right"></i>Methodology</h2>
+                            <p> <strong>Nielsen's 10 Usability Heuristics</strong> were used to analyze design from a professional standpoint, 
+                                while <strong>Think-aloud </strong> testing revealed real user experiences and challenges. 
+                                These methods identified usability issues and informed targeted improvements for a better user experience.
+                            </p>
+                        </section>
+                        <section class="Methodology-section2">
+                            <h3>Nielsen's 10 Usability Heuristics</h3>
+                            <div class="neilsen">
+                                <div class="neilsen-card" data-hover="Provide timely feedback to keep users informed.">
+                                    <p>Visibility of System Status</p>
+                                </div>
+                                <div class="neilsen-card" data-hover="Use familiar language and concepts, avoiding jargon, and present information in a natural, logical order.">
+                                    <p>Match Between the System and the Real World</p>
+                                </div>
+                                <div class="neilsen-card" data-hover="Offer a clear 'emergency exit' to help users quickly undo mistakes.">
+                                    <p>User Control and Freedom</p>
+                                </div>
+                                <div class="neilsen-card" data-hover="Ensure consistency, using the same terms and actions across the platform to avoid confusion, following industry conventions.">
+                                    <p>Consistency and Standards</p>
+                                </div>
+                                <div class="neilsen-card" data-hover="Prevent errors by eliminating potential issues or prompting users for confirmation before they proceed with risky actions.">
+                                    <p>Error Prevention</p>
+                                </div>
+                            </div>
+                            <div class="neilsen">
+                                <div class="neilsen-card" data-hover="Minimize the user's memory load by ensuring that elements, actions, and options are visible and easily accessible.">
+                                    <p>Recognition Rather than Recall</p>
+                                </div>
+                                <div class="neilsen-card" data-hover="Provide accelerators like shortcuts and gestures, enable personalization, and allow customization to suit individual user preferences.">
+                                    <p>Flexibility and Efficiency of Use</p>
+                                </div>
+                                <div class="neilsen-card" data-hover="Avoid irrelevant or rarely needed information, as it distracts from the important content and reduces its visibility.">
+                                    <p>Aesthetic and Minimalist Design</p>
+                                </div>
+                                <div class="neilsen-card" data-hover="Error messages should use plain language, specify the problem, and provide constructive solutions.">
+                                    <p>Help Users Recognize, Diagnose, and Recover from Errors</p>
+                                </div>
+                                <div class="neilsen-card" data-hover="If documentation is needed, it should be easy to search, concise, and task-focused with clear steps.">
+                                    <p>Help and Documentation</p>
+                                </div>
+                            </div>
+                            <div class="caption-container">
+                                <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">10 Usability Heuristics for User Interface Design</a>
+                            </div>
+                        </section>
+                        <section class="Methodology-section3">
+                            <h3>Think-aloud Testing</h3>
+                            <p>This method encourages users to verbalize their thoughts as they interact with the user interface, providing valuable 
+                                insights into their thought processes and challenges. In the testing, users were tasked with setting transitions for three slides, 
+                                allowing evaluators to observe their actions, and any confusion or difficulties that arose during the process. 
+                                By verbalizing their actions, users reveal how they interpret the interface, highlighting areas that may need improvement for a 
+                                smoother user experience. This real-time feedback is crucial for identifying usability issues and refining the design.
+                            </p>
+                        </section>
+                    </section>
+                    <section class="HTA" id="htadiagram">
+                        <h2><i class="fa-solid fa-caret-right"></i>Hierarchical Task Analysis Diagram</h2>
+                        <p>Hierarchical Task Analysis Diagram is a structured method used to analyze the tasks users need to perform to achieve a specific goal. HTA diagrams break down complex tasks into smaller, more manageable sub-tasks, which are then organized hierarchically. This method helps designers and researchers understand the steps involved in a task, identify potential issues, and improve the overall usability of a system. 
+                        </p>
+                        <div class="HTA-container">
+                            <img src="../media/HTA.png" alt="Hierarchical Task Analysis Diagram" />
+                        </div>
+                    </section>  
+                    <section class="evaluation-section" id="evaluation">
+                        <h2><i class="fa-solid fa-caret-right"></i>Expert Evaluation</h2>
+                        <div class="compliance">
+                            <h3>Instances of Compliance with Nielsen's Heuristics</h3>
+                            <div class="block1">
+                                <h4>Visibility of System Status</h4>
+                                <div class="block1-container">
+                                    <div class="fig1">
+                                        <div>
+                                            <p>When the slide is selected, it will be highlighted with a blue frame, 
+                                                indicating to users' current location within the presentation. This obvious 
+                                                visual indicator can effectively inform users of the system's status. 
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <img src="../media/Picture1.png"  />
+                                        </div>
+                                    </div>
+                                    <div class="fig2">
+                                        <div>
+                                            <p>The gray color background of the clickable text “view” and the mouse pointer icon serve 
+                                                as visual indicators of the cursor's position. 
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <img src="../media/Picture2.png"  />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block1">
+                                <h4>Error Prevention</h4>
+                                <div class="block1-container">
+                                    <div class="fig1">
+                                        <div>
+                                            <p>According to Jakob Nielsen, errors can be unconscious or conscious, but good design can prevent many mistakes. 
+                                                For example, Google Slides helps users avoid content loss during connectivity issues by automatically saving 
+                                                files locally. When reconnected, changes are synced to Google Drive, preventing outdated uploads. 
+                                                The offline status indicator also reminds users their work is temporarily saved on their device. 
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <img src="../media/Picture3.png"  />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block1">
+                                <h4>Flexibility and Efficiency of Use</h4>
+                                <div class="block1-container">
+                                    <div class="fig1">
+                                        <div>
+                                            <p>Novice and expert users have different needs: novices benefit 
+                                                from accessible learning aids, while experts seek efficient 
+                                                task completion. Google Slides addresses both by offering 
+                                                keyboard shortcuts for quick actions and displaying shortcut tips 
+                                                on the toolbar to aid novice learning.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <img src="../media/Picture4.png"  />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="violation">
+                            <h3>Instances of Violation with Nielsen's Heuristics</h3>
+                            <div class="block1">
+                                <h4>Consistency and Standards</h4>
+                                <p>
+                                    Inconsistent labeling can lead to user confusion. 
+                                    Users may struggle to differentiate between "Motion," "Transition," and 
+                                    "Animation" as each option opens the same right panel with all three features. 
+                                    While this inconsistency doesn’t impact functionality, it slightly detracts from the interface‘s clarity.
+                                </p>
+                                <div class="block1-container">
+                                    <div class="fig1">
+                                        <div>
+                                            <p>When users click "Transition" on the shortcut toolbar in Google Slides, 
+                                                they are prompted to choose a transition effect. However, the title of 
+                                                this function changes to "Motion”.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <img src="../media/Picture5.png"  />
+                                        </div>
+                                    </div>
+                                    <div class="fig2">
+                                        <div>
+                                            <p>When users right-click a slide, there is a "Transition" function option 
+                                                with an icon that is the same as the "Motion" function. 
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <img src="../media/Picture6.png"  />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block1">
+                                <h4>Flexibility and Efficiency of Use</h4>
+                                <div class="block1-container">
+                                    <div class="fig1">
+                                        <div>
+                                            <p>The slider for setting transition duration may create confusion 
+                                                due to its unconventional layout. To increase the transition speed, 
+                                                users drag the slider to the right, which displays lower values—counterintuitive 
+                                                to the usual expectation of ascending values from left to right.
+                                                To improve the usability, it is recommended to implement either a dropdown menu 
+                                                with integer numbers or plus and minus buttons within an input field for setting the duration.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <img src="../media/Picture9.png"  />
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="think-aloud-section" id="thinkaloud">
+                        <h2><i class="fa-solid fa-caret-right"></i>Think-aloud Testing</h2>
+                        <div>
+                            <h3>Process</h3>
+                            <p>Participants completed individual think-aloud usability tests to avoid bias. Before testing, the setup was prepared, including the computer and Google Slides. Evaluators introduced themselves and outlined the session agenda: 
+                            </p>
+                            <ul>
+                                <li>A brief survey</li>
+                                <li>A transition effects task</li>
+                                <li>Post-task interview</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Results Analysis</h3>
+                            <div>
+                                <h4>Variety of Process to Task Completion</h4>
+                                <p> Apparently, the different workflow results demonstrate the users' varying mental models. Moreover, since the transition function is displayed in multiple positions in the Google Slides platform, users can access it through different entrances that form various routes. Therefore, users can choose the entry point aligning with their preference to access the transition function.  
+                                </p>
+                            </div>
+                            <div>
+                                <h4>Confusion and Difficulty in Using the Transition Slider Bar</h4>
+                                <p> The process of adjusting the duration of transitions was not straightforward, leading to frustration and errors. Users often needed to try several times to get used to its interaction. One potential solution could be to replace the transition slider bar with a dropdown menu or plus and minus buttons, 
+                                    which are the suggestion presented in the section describing violations.
+                                </p>
+                            </div>
+                            <div>
+                                <h4>Doubtful Feeling and Uncertainty about the Motion Panel</h4>
+                                <p> The participant who clicked the “Play” button to preview the slide wasn't sure if the action had taken effect. 
+                                    Additionally, the interview revealed that the participant ignored the motion icon for a slide with applied transition 
+                                    on the slide navigation panel. The uncertainty and confusion suggest that the feedback for when a transition is applied may 
+                                    not be clear to users. One improvement can be to rename the “Play” button to “Preview,” indicating the successful setting the implication 
+                                    which users can check the slide's status before finalizing their presentation. This minor change in naming could enhance user understanding with the feature.
+
+                                    Moreover, the participant's question “Is that all done?” was raised with doubtful tone after finishing to create the final transition effect and its duration. The uncertain attitude indicates the feedback for motion effects is needed, or users would not know if their actions have been successfully completed. Therefore, providing clear visual feedback is crucial to help users understand the outcome and a slide’s status.
+                                    
+                                </p>
+                            </div>
+                            <div>
+                                <h4>Feature Functionality Connection to PowerPoints</h4>
+                                <p> This observation from the interview conducted after the think-aloud testing suggests that users expected the 
+                                    interaction to be similar to their prior experience with Microsoft PowerPoints, especially when they found that 
+                                    first and final slides couldn't show the transition effects. This connection suggests that users have 
+                                    the expectation of similar functionality between Google Slides and PowerPoints
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="takwaway-section" id="takwaway">
+                        <h2><i class="fa-solid fa-caret-right"></i>Take Away</h2>
+                        <p>
+                            Nielsen's 10 Heuristics help identify key usability issues in user interface design. 
+                            This evaluation highlighted problems such as inconsistent feature naming, increased cognitive 
+                            load due to unclear display status, lack of feedback on transition effects, and an unintuitive 
+                            slider for setting transition duration. These issues point to potential usability challenges, 
+                            emphasizing the need for design improvements. 
+                        </p>
+                        <p>
+                            User-based evaluations, like Think-aloud, provide valuable insights into both user interface 
+                            and overall user experience. A key takeaway was that participants overlooked the motion icon on the navigation panel, 
+                            despite it aligning with the heuristic of system status visibility. This shows that users may not always notice intended feedback, 
+                            stressing the need for clearer design cues. Additionally, participants expressed frustration with the transition duration slider, 
+                            which violated the heuristic of flexibility and efficiency of use. 
+                            
+                        </p>
+                        <p>
+                            While expert evaluations can identify issues early in development, 
+                            user-based evaluations reveal how individual backgrounds, technical skills, and prior experiences shape users' mental models. Combining both evaluation methods provides a more holistic understanding of usability, leading to more effective and user-friendly design solutions.
+                        </p>
+                        
+                    </section>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="wrapper">
+            <div class="row"></div>
+            <div class="container_info">
+                <ul class="info">
+                <h3>Contact Information<h3>
+                <p>Feel free to reach out to me any time.</p>
+                <p><a href="mailto:zoeyiu0821@gmail.com">zoeyiu0821@gmail.com</a></p>  
+                </ul>
+                <ul class="project_info">
+                <h3>Featured Projects<h3>
+                <li><a href="/projects/ZenZzz.html" target="_blank">ZenZzz</a></li>
+                <li><a href="/projects/BlissLife.html" target="_blank">BlissLife</a></li>
+                <li><a href="/projects/CreditCard.html" target="_blank">Credit Card Platform</a></li>
+                <li><a href="/projects/Googleslides.html" target="_blank">Google Slides Research</a></li>
+                
+                </ul>
+                <ul class="project_info">
+                <h3>More Work<h3>
+                <li><a href="/projects/FamilyMart.html" target="_blank">FamilyMart</a></li>
+                <li><a href="/projects/LeapNews.html" target="_blank">Leap News</a></li>
+                <li><a href="/projects/DesignThinking.html" target="_blank">Design Thinking</a></li>
+                <li><a href="/projects/Wcag.html" target="_blank">WCAG Research</a></li>
+                </ul>
+                <ul>
+                <h3>Follow Me</h3>
+                <div class="contact_icons">
+                    <a href="https://www.linkedin.com/in/zoeyiu0821/" target="_blank"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
+                    <a href="https://zoeyuchat.wordpress.com" target="_blank"><i class="fa-brands fa-wordpress" id="wordpress"></i></a>
+                </div>
+                </ul>
+            </div>
+            </div>
+        </footer>
+        <div class="pagetransition">
+            <div class="transition_text">
+              <p>Let's Work Together</p>
+            </div>
+        </div>
+        <script src="../js/general.js"></script>
+        <script src="../js/googleslide.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    </body>
+</html>

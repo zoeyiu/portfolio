@@ -1,0 +1,862 @@
+section{
+    scroll-behavior: smooth; /* 全局平滑滚动效果 */
+}
+
+.background-text{
+    font-family: "Open Sans";
+    font-size: 400px;
+    color: white;
+    opacity: 70%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    z-index: 0;
+    max-width: 100%;
+}
+
+.title {
+    font-family:'Montserrat', sans-serif;
+    font-weight: 600; /* semibold */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    font-size: 4rem;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    line-height: 80px;
+    padding: 10%;
+    opacity: 0;
+    display: inline-block;
+    white-space: normal; /* 确保单词可以正常换行 */
+}
+
+.word {
+    display: inline-block; /* 保持单词在同一行 */
+    white-space: nowrap; /* 防止单词内部断行 */
+}
+
+.letter {
+  opacity: 0;
+  display: inline-block;
+  transition: opacity 0.5s;
+}
+
+
+
+.brief {
+    background-color: #FBF5EE;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+main{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*第二個區塊*/
+.background {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 100vh;
+}
+
+.bg-section {
+    position: relative;
+    width: 33.33%;
+    height: 100%;
+    text-align: center;
+}
+
+.bg-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 1s;
+
+}
+
+.container {
+    position: relative; /* 确保 .container 有 position 属性，才能把what do I do 定位 */
+   
+}
+
+
+
+
+.fade-text {
+    font-size: 3.5rem;
+    font-weight: 600;
+    position: absolute;
+    top: 30%; /* 调整为适当的位置 */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1000;
+}
+
+
+
+
+/*第三個區塊*/
+.featuredproject{
+    position: relative; 
+    width: 100%;
+    height: 100vh;
+    background-color: #FBF5EE;
+    overflow: hidden; /* 隐藏溢出内容 */
+}
+
+.split-slider {
+    display: flex;
+    height: 100%;
+    position: relative;
+    transition: transform 1s ease; /* 平滑过渡 */
+  }
+  
+.left-panel, .right-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+  }
+
+/* 左邊動畫由上往下*/
+@keyframes slideDown {
+    0% {
+      background-position: center 100%; /* 从顶部外部开始 */
+    }
+    100% {
+      background-position: center center; /* 移动到顶部 */
+    }
+  }
+
+.left-panel.animate-bg {
+    animation: slideDown 1s forwards; /* 动画名为slideDown，1秒执行时间，动画结束后保持最终状态 */
+    background-position: center top; 
+}
+
+/* 右边内容从底部向上进入 */
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%); /* 从底部外面开始 */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* 移动到原始位置 */
+    }
+}
+
+
+.right-panel.animate-text {
+    opacity: 0; /* 初始透明度为0，隐藏内容 */
+    transform: translateY(100%); /* 初始位置在底部外面 */
+    animation: slideInUp 3s forwards; /* 动画名为slideInUp，1秒执行时间，动画结束后保持最终状态 */
+}
+
+
+.slider-content {
+    text-align: center;
+    padding: 20px;
+  }
+  
+
+.thumbnail-slider {
+    position: absolute;
+    top: 95%;
+    right: 20px; /* 调整右侧距离，可以根据需要调整 */
+    transform: translateY(-50%);
+    
+    display: flex;
+    flex-direction: row; /* 垂直排列 */
+    justify-content: center; /* 垂直居中 */
+    align-items: flex-end; /* 右对齐 */
+
+    /* 可选：添加 padding 以及其他样式 */
+    padding: 20px;
+}
+
+.thumbnail {
+    width: 20px;
+    height: 20px;
+    background: #dedede;
+    margin: 0 6px ; /* 调整按钮之间的垂直间距 */
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+
+.right-boximg{
+    display: flex;
+    justify-content: left;
+    
+}
+
+.slider-content{
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: flex-start;     /* Align content to the left */
+}
+
+.slider-content h5{
+    color:#20459F;
+    font-size: 1rem;
+}
+
+.slider-content h2{
+    font-size: 2.5rem;
+}
+
+.slider-content p{
+    
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+
+
+
+/* CSS */
+.learn-more-button {
+    background-color: #000;                 /* Button background color */
+    border: 1px solid #000;                 /* Button border */
+    border-radius: 4px;                     /* Rounded corners */
+    box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px; /* Shadow effect */
+    box-sizing: border-box;                 /* Include padding and border in element's total width and height */
+    color: #fff;                            /* Button text color */
+    cursor: pointer;                        /* Pointer cursor on hover */
+    display: inline-block;                  /* Inline block display */
+    font-size: 14px;                        /* Font size */
+    font-weight: 400;                       /* Font weight */
+    line-height: 20px;                      /* Line height */
+    margin: 0 5px 10px 0;                   /* Margin around the button */
+    overflow: visible;                      /* Overflow handling */
+    padding: 12px 40px;                     /* Padding inside the button */
+    text-align: center;                     /* Center the text */
+    text-transform: none;                   /* Do not transform text */
+    touch-action: manipulation;             /* Enable touch manipulation */
+    user-select: none;                      /* Disable text selection */
+    -webkit-user-select: none;              /* Disable text selection in WebKit browsers */
+    vertical-align: middle;                 /* Align the button vertically */
+    white-space: nowrap;                    /* Prevent text from wrapping */
+    margin-top: 10px;
+  }
+  
+
+.learn-more-button:focus {
+  text-decoration: none;
+}
+
+.learn-more-button:hover {
+  text-decoration: none;
+}
+
+.learn-more-button:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.learn-more-button:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .learn-more-button {
+    padding: 12px 50px;
+  }
+}
+
+  .learn-more-button:hover {
+    background-color: #20459F; /* Darker background on hover */
+  }
+  
+/*---------------------------------------------*/
+
+/*第四個區塊*/
+.otherprojects{
+    max-width: 100%;
+    height: 100vh;
+    padding-left: 5%;
+    overflow-y: hidden;
+    background-color: #FBF5EE;
+    display:flex;
+    justify-content: center; /* 水平居中 */
+    align-items: left; /* 垂直居中 */
+    flex-direction: column;
+}
+
+.otherprojects h3{
+    font-size: 2rem;
+    padding: 10px;
+    margin: 0;
+    
+}
+
+.otherprojects-title{
+    margin-top: 8%;
+}
+
+.cards-container {
+    overflow-x: auto;
+    
+    padding-bottom: 17px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 2%;
+    
+}
+
+.card {
+    flex: 1 0 400px;
+    max-width: 400px;
+    height: 500px;
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid;
+    border-radius: 20px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background-size: cover;
+    cursor: pointer;
+
+    margin-right: 5%;
+    overflow: hidden; 
+}
+
+.card img {
+    max-width: 100%;
+    height: 100%;
+    object-fit:cover; /* 保持图片比例并填充整个容器 */
+    object-position: center;
+    border-radius: 20px;
+    display: block;
+}
+.card {
+    position: relative;
+    width: 300px; /* 适当设置卡片宽度 */
+    height: 400px; /* 适当设置卡片高度 */
+    overflow: hidden; /* 确保内容不溢出卡片 */
+    margin: 20px; /* 适当设置边距 */
+    border-radius: 20px; /* 添加圆角 */
+
+    
+  }
+
+.project_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* 半透明背景色 */
+    color: #fff; /* 文本颜色 */
+    opacity: 0; /* 默认不可见 */
+    transition: opacity 0.3s ease; /* 添加渐变效果 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1; /* 确保在图片上方 */
+    border-radius: 20px; /* 圆角 */
+  }
+
+
+.card .items {
+    padding-left: 20px;
+    letter-spacing: 3px;
+  }
+
+.card .head {
+    font-size: 30px;
+    line-height: 40px;
+    transform: translateY(40px);
+    transition: all 0.7s;
+  }
+
+.card .head h2 {
+    font-size: 1.5rem;
+}
+
+.card .head hr {
+    display: block;
+    width: 0;
+    border: none;
+    border-bottom: solid 2px #FEF5DF;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    transition: all .5s;
+  }
+
+.card .price {
+    font-size: 1rem;
+    line-height: 20px;
+    font-family: "Open Sans";
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s;
+    line-height: 25px;
+  }
+
+/* .card .price .old {
+    text-decoration: line-through;
+    color: lighten(rgb(77, 77, 77), 40%);
+  } */
+
+.card .cart {
+    
+    opacity: 0;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+    transform: translateY(40px);
+    transition: all 0.7s;
+    margin-top: 35px;
+  }
+
+.card .cart i {
+    font-size: 1rem;
+  }
+
+.card .cart span {
+    font-size: 1rem;
+    
+    margin-left: 10px;
+    
+  }
+
+.card:hover .project_overlay {
+    opacity: 1;
+  }
+
+.card:hover .head {
+    transform: translateY(0px);
+  }
+
+.card:hover hr {
+    margin: 0;
+    width: 90%;
+    transition-delay: 0.4s;
+
+  }
+
+
+
+
+
+.card:hover .price {
+    transform: translateY(0px);
+    transition-delay: 0.3s;
+    opacity: 1;
+  }
+
+.card:hover .cart {
+    transform: translateY(0px);
+    transition-delay: 0.6s;
+    opacity: 1;
+  }
+
+
+.cards-button {
+    display: flex;
+    justify-content: center;
+    
+    
+  }
+
+.cards-button button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+.cards-button button i {
+    font-size: 24px; /* 调整图标大小 */
+  }
+
+
+/**/
+
+.slogan{
+    width: 100%;
+    height: 50vh;
+    background-color: #ffffff;
+}
+
+.worktgt{
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  height: 50vh; 
+  text-align: center; 
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.iconarrow {
+  margin-left: 8px; 
+}
+
+#designer{
+  font-size: 16px;
+  color: #878a8f;
+}
+
+.contact{
+  font-size: 48px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit; 
+  position: relative;
+  margin-top: 8px; 
+}
+
+.contact::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; 
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease;}
+
+.contact:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    header{
+        max-width:100%;
+    }
+    body{
+        max-width:100%;
+    }
+
+    .brief{
+        max-width:100%;
+    }
+    .logo {
+      max-width: 80%;
+    }
+  
+    .hamburger {
+      display: block;
+      padding: 10px;
+    }
+  
+    .hamburger-menu ul {
+      margin: 30% auto;
+    }
+    .section {
+        padding: 80px 0;
+        text-align: center;
+    }
+
+    .background-text {
+        font-size: 150px;
+        margin-top: 6%;
+        }
+
+    .title {
+        font-family:'Montserrat', sans-serif;
+        font-weight: 600; /* semibold */
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        font-size: 4rem;
+        margin: 0;
+        position: relative;
+        z-index: 1;
+        line-height: 80px;
+        padding: 10%;
+
+    }
+
+    main {
+        position: relative;
+        z-index: 1;
+        max-width: 100%;
+        
+    }
+
+    .brief {
+        background-color: #FBF5EE;
+        position: relative;
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text{
+        font-size: 2rem;
+
+    }
+
+    .fade-text {
+        font-size: 3rem;
+        
+    }
+
+    
+}
+
+
+
+
+@media (max-width: 767px) {
+  .mouse-follower {
+    display: none;
+  }
+
+    header{
+        max-width: 100%;
+        padding: 10px;
+        
+    }
+    body{
+        max-width: 100%
+    }
+
+    .brief{
+        max-width: 100%
+    }
+    .logo {
+      max-width: 40% ;
+      height: 30px;
+    }
+    
+    main{
+        max-width: 100%;
+
+    }
+    .hamburger {
+      display: block;
+      
+    }
+  
+    .hamburger-menu ul {
+      margin: 30% auto;
+    }
+    .section {
+        padding: 0;
+        text-align: center;
+    }
+
+    .background-text {
+        font-size: 8rem;
+        margin-top: 10%;
+        max-width: 100%;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        line-height: 60px;
+        padding: 10%;
+    }
+    
+    /*Cando區塊*/
+    .background {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        height: 100vh;
+    }
+
+    .bg-section {
+        position: relative;
+        width: 100%;
+        height: calc(100vh / 3); /* 将高度设置为视窗高度的三分之一 */
+        text-align: center;
+    }
+    
+    .bg-section img {
+        width: 100%;
+        object-fit:cover; /* 确保图片填满区域 */
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 1s;
+    }
+
+    .text{
+        font-size: 2.5rem;
+
+    }
+
+    .fade-text {
+        font-size: 3rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+
+    .featuredproject{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .split-slider{
+      
+      flex-direction: column;
+      
+    }
+    
+    .left-panel animate-bg{
+      display: flex;
+     
+      object-fit: cover;
+    }
+
+    .background-image{
+      height: 600px;
+    }
+    
+    .right-panel {
+      
+      flex: none; /* Reset flex property */
+      justify-content: unset;
+    }
+
+    .slider-content{
+      display: flex;
+      flex-direction: column;
+      margin-left: 5%;
+      margin-right: 5%;
+      height: 350px;
+    }
+
+    .slider-content h5{
+      font-size: 1rem;
+      padding: 0;
+      margin: 0;
+    }
+    .slider-content h2{
+      margin-top:5%;
+    }
+
+    .container_info{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-start
+    }
+    
+    
+    .thumbnail-slider {
+    position:unset;
+    top:0%;
+    right: auto;
+    transform: translateY(0);
+    flex-direction: row;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    margin-left: 5%
+  }
+
+  .otherprojects{
+    height: 80vh;
+  }
+}   
+
+
+@media screen and (max-width: 400px) {
+    .background-text {
+        font-size: 6rem;
+        margin-top: 15%;
+        max-width: 100%;
+    }
+    .title {
+        font-size: 2rem;
+        line-height: 40px;
+        padding: 10%;
+
+    }
+
+    #designer{
+      font-size: 10px;
+    }
+    
+    .contact{
+      font-size: 25px;
+    }
+
+    .slider-content{
+      height: auto;
+    }
+}
+    

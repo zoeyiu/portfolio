@@ -1,0 +1,331 @@
+
+h1{font-family:'Open Sans';
+    margin: 0;
+    padding: 0;
+    font-size:2.5rem;
+}
+
+h2 {font-family:'Open Sans';
+  margin: 0;
+  padding: 0;
+  font-size:2rem;
+}
+
+h3{
+  font-family:'Open Sans';
+  font-size:1.5rem;
+}
+h4{
+  font-family:'Open Sans';
+  font-size:1.2rem;
+  color:#125390;
+}
+
+p{
+  line-height: 1.5;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.logo {
+    height: 50px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    z-index: 1000;
+    position: sticky;
+    top:0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.full-screen-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 90%;
+    color: #fff;
+    z-index: 1000;
+    text-align: center;
+    padding-top: 100px;
+    opacity: 0; 
+    visibility: hidden; 
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.full-screen-menu.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.full-screen-menu .close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+#fullScreenMenu {
+  display: none;
+  transition: opacity 0.5s ease; /* 设置过渡效果 */
+  opacity: 0; /* 初始时透明 */
+}
+
+#fullScreenMenu.show {
+  display: block;
+  opacity: 1; /* 显示时完全不透明 */
+}
+
+
+
+footer{
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+.wrapper{
+    padding: 0 14px;
+    width: 100%;
+    
+  }
+  
+.row {
+    padding-top: 74px;
+    border-top: 1px solid #e7e8e9;
+  }
+  
+.container_info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  
+.container_info ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+.container_info ul li {
+    color: black;
+    list-style: none;
+  }
+  
+.container_info ul li a {
+    text-decoration: none;
+    color: black;
+    
+  }
+  
+.project_info h3 li{
+    margin-top: 10%;
+    margin-bottom: 10% ;
+  }
+  
+.container_info h3{
+    font-size: 1.2rem;
+  }
+  
+.container_info p , .container_info li{
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  
+ul.project_info {
+    list-style: none;
+    padding: 0;
+  }
+ 
+ul.project_info li a{
+    position: relative;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+  
+ul.project_info li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+  }
+  
+ul.project_info li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+ul.project_info li a:hover {
+    color: #000; /* Optional: Change text color on hover */
+  }
+  
+.contact_icons{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+  
+#linkedin{
+    color: #0077B5;
+    margin-right: 10px;
+  }
+  
+#wordpress{
+    color: #21759b;
+    margin-right: 10px;
+  }
+
+
+.mouse-follower {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 30000;
+    transition: transform 0.1s ease;}
+
+
+.pagetransition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #125390; 
+    transform: scaleX(0);
+    transform-origin: right; 
+    z-index: 20000;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+
+.transition_text {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+.transition_text p {
+    color: white; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px; 
+    margin: 0; 
+  }
+
+
+.loading-transition2 {
+    position: fixed; /* 固定位置 */
+    top: 0;
+    left: 0;
+    width: 100vw; /* 全屏寬度 */
+    height: 100vh; /* 全屏高度 */
+    z-index: 9999; /* 確保在最上層 */
+    opacity: 0; /* 初始全透明度 */
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    font-size: 24px;
+    cursor: pointer;
+    }
+
+  
+nav a {
+    text-decoration: none; /* 去掉默认下划线 */
+    color: rgb(255, 255, 255); /* 默认文字颜色 */
+    font-weight: bold; /* 使文字加粗 */
+    transition: color 0.3s; /* 平滑过渡效果 */
+    margin: 10px 0;
+  }
+  
+nav a:hover {
+    color: rgb(245, 242, 156); /* hover时的文字颜色 */
+  }
+  
+  @media (max-width: 767px) {
+    .mouse-follower {
+      display: none;
+    }
+  
+      header{
+          max-width: 100%;
+          padding: 10px;
+          
+      }
+      body{
+          max-width: 100%
+      }
+  
+      .brief{
+          max-width: 100%
+      }
+      .logo {
+        
+        height: 30px;
+      }
+      
+      main{
+          max-width: 100%;
+  
+      }
+      .hamburger {
+        display: block;
+        
+      }
+    
+      .hamburger-menu ul {
+        margin: 30% auto;
+      }
+      .container_info{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start
+      }
+      
+    }
+    @media screen and (max-width: 400px) {
+      .contact{
+        font-size: 25px;
+      }
+    }
