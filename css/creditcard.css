@@ -1,6 +1,6 @@
 
   
-.title-container {
+.pass-container{
     margin-bottom: 20px;
     text-align: center;
   }
@@ -9,23 +9,23 @@
     display: none;
   }
   
-  .input-container {
+.input-container {
     margin-top: 20px;
     text-align: center;
   }
   
-  .input-container input {
+.input-container input {
     padding: 10px;
     font-size: 16px;
   }
   
-  .input-container button {
+.input-container button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
   }
   
-  .error-message {
+.error-message {
     color: red;
     margin-top: 10px;
     display: none; /* 默认隐藏 */
