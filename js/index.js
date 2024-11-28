@@ -196,7 +196,7 @@ function changeSlide(slideIndex) {
 
             // Create a new button element
             const button1 = document.createElement('button');
-            button1.setAttribute('href', '../projects/ZenZzz.html');
+            button1.setAttribute('href', 'projects/ZenZzz.html');
             button1.innerText = 'Learn More';
             button1.classList.add('learn-more-button', 'page-link'); // Add a class for further styling if needed
             button1.addEventListener('click', handleButtonClick);
@@ -232,7 +232,7 @@ function changeSlide(slideIndex) {
             rightPanel.querySelector('p').innerText = 'BlissLife is a holistic wellness website designed to improve your physical and mental health. It offers free resources meet community support for your well-being journey.';
 
             const button2 = document.createElement('button');
-            button2.setAttribute('href', '../projects/Blisslife.html');
+            button2.setAttribute('href', 'projects/Blisslife.html');
             button2.innerText = 'Learn More';
             button2.classList.add('learn-more-button', 'page-link');
             button2.addEventListener('click', handleButtonClick);
@@ -265,7 +265,7 @@ function changeSlide(slideIndex) {
             rightPanel.querySelector('p').innerText = 'As a product manager of credit card platform, my team redesigned the user experience of applying for credit cards.';
 
             const button3 = document.createElement('button');
-            button3.setAttribute('href', '../projects/CreditCard.html');
+            button3.setAttribute('href', 'projects/CreditCard.html');
             button3.innerText = 'Learn More';
             button3.classList.add('learn-more-button','page-link');
             button3.addEventListener('click', handleButtonClick);
@@ -295,7 +295,7 @@ function changeSlide(slideIndex) {
             rightPanel.querySelector('p').innerText = 'This project aimed to comprehensively evaluate a user interface for setting slide transitions, using usability testing and theory to improve the design.';
 
             const button4 = document.createElement('button');
-            button4.setAttribute('href', '../projects/Googleslides.html');
+            button4.setAttribute('href', 'projects/Googleslides.html');
             button4.innerText = 'Learn More';
             button4.classList.add('learn-more-button', 'page-link');
             button4.addEventListener('click', handleButtonClick);

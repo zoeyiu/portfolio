@@ -53,36 +53,37 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 //藍色loading out
-document.addEventListener('DOMContentLoaded', function() {
-    // 监听所有带有.page-link类的链接点击事件
+document.addEventListener('DOMContentLoaded', function () {
+    // 初始化 pagetransition 的狀態
+    const pagetransition = document.querySelector('.pagetransition');
+    gsap.set(pagetransition, { scaleX: 0 }); // 確保進入頁面時為初始狀態
+
+    // 監聽所有帶有.page-link類的鏈接
     const pageLinks = document.querySelectorAll('.page-link');
     pageLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault(); // 阻止默认链接行为
-
-            const targetUrl = this.getAttribute('href'); // 获取目标链接
-            // 创建GSAP动画时间轴
+        link.addEventListener('click', function (event) {
+            event.preventDefault(); // 阻止預設鏈接行為
+            const targetUrl = this.getAttribute('href'); // 取得目標鏈接
+            
             const tl = gsap.timeline();
-
-            // 添加页面切换效果动画
+            
+            // 頁面轉場動畫
             tl.to('.pagetransition', {
                 duration: 0.8,
                 scaleX: 1,
                 ease: 'power2.inOut',
             });
 
-            // 动画结束后跳转到目标页面
+            // 在動畫完成後進行頁面跳轉
             tl.to(window, { 
                 duration: 0.3, 
                 delay: 0.8,
-                onComplete: function() {
+                onComplete: function () {
                     window.location.href = targetUrl;
                 }
             });
         });
     });
-
-
 });
 
 
