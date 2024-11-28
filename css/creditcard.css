@@ -13,13 +13,12 @@
   }
   
 .input-container {
-    
     display: flex;
     flex-direction: row;
     margin-top: 20px;
     text-align: center;
     align-items: center;
-    justify-content: center; /* 水平方向置中 */
+    justify-content: center; 
     gap:10px;
   }
   
