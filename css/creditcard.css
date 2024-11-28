@@ -5,6 +5,7 @@
     flex-direction: column;
     margin-bottom: 20px;
     text-align: center;
+    align-items: center;
   }
 
 .protected-content {
@@ -14,9 +15,10 @@
 .input-container {
     
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 20px;
     text-align: center;
+    align-items: center;
   }
   
 .input-container input {
