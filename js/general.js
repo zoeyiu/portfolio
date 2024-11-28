@@ -55,27 +55,24 @@ document.addEventListener("DOMContentLoaded", function () {
 //藍色loading out
 document.addEventListener('DOMContentLoaded', function () {
     const pagetransition = document.querySelector('.pagetransition');
-    gsap.set(pagetransition, { scaleX: 0 }); // 確保進入頁面時為初始狀態
+    
+    // 初始化 pagetransition 狀態
+    gsap.set(pagetransition, { scaleX: 0 });
 
-    // 監聽所有帶有.page-link類的鏈接
+    // 點擊鏈接觸發轉場動畫
     const pageLinks = document.querySelectorAll('.page-link');
     pageLinks.forEach(link => {
         link.addEventListener('click', function (event) {
-            event.preventDefault(); // 阻止預設鏈接行為
-            const targetUrl = this.getAttribute('href'); // 取得目標鏈接
-            
+            event.preventDefault(); // 阻止默認行為
+            const targetUrl = this.getAttribute('href'); // 獲取目標鏈接
+
             const tl = gsap.timeline();
-            
-            // 頁面轉場動畫
-            tl.to('.pagetransition', {
+            tl.to(pagetransition, {
                 duration: 0.8,
                 scaleX: 1,
                 ease: 'power2.inOut',
-            });
-
-            // 在動畫完成後進行頁面跳轉
-            tl.to(window, { 
-                duration: 0.3, 
+            }).to(window, {
+                duration: 0.3,
                 delay: 0.8,
                 onComplete: function () {
                     window.location.href = targetUrl;
@@ -83,15 +80,22 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     });
-});
 
-// 使用 pageshow 確保在返回時重置動畫
-window.addEventListener('pageshow', function (event) {
-    const pagetransition = document.querySelector('.pagetransition');
-    // 重置 pagetransition 狀態
-    if (event.persisted) { // 確保是從 BFCache 恢復
-        gsap.set(pagetransition, { scaleX: 0 });
-    }
+    // 處理返回上一頁時的動畫
+    window.addEventListener('popstate', function () {
+        const tl = gsap.timeline();
+        tl.fromTo(pagetransition, 
+            { scaleX: 1 }, // 保持頁面轉場為全屏狀態
+            { 
+                duration: 0.8,
+                scaleX: 0,
+                ease: 'power2.inOut',
+                onComplete: function () {
+                    // 動畫結束後繼續保持頁面的互動性
+                }
+            }
+        );
+    });
 });
 
 
