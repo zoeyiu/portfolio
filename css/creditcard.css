@@ -1,6 +1,8 @@
 
   
 .pass-container{
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
     text-align: center;
   }
@@ -10,6 +12,9 @@
   }
   
 .input-container {
+    
+    display: flex;
+    flex-direction: column;
     margin-top: 20px;
     text-align: center;
   }
