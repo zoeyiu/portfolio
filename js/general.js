@@ -54,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //藍色loading out
 document.addEventListener('DOMContentLoaded', function () {
-    // 初始化 pagetransition 的狀態
     const pagetransition = document.querySelector('.pagetransition');
     gsap.set(pagetransition, { scaleX: 0 }); // 確保進入頁面時為初始狀態
 
@@ -85,6 +84,16 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+// 使用 pageshow 確保在返回時重置動畫
+window.addEventListener('pageshow', function (event) {
+    const pagetransition = document.querySelector('.pagetransition');
+    // 重置 pagetransition 狀態
+    if (event.persisted) { // 確保是從 BFCache 恢復
+        gsap.set(pagetransition, { scaleX: 0 });
+    }
+});
+
 
 
 
