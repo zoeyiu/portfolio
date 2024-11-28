@@ -232,7 +232,7 @@ function changeSlide(slideIndex) {
             rightPanel.querySelector('p').innerText = 'BlissLife is a holistic wellness website designed to improve your physical and mental health. It offers free resources meet community support for your well-being journey.';
 
             const button2 = document.createElement('button');
-            button2.setAttribute('href', 'projects/Blisslife.html');
+            button2.setAttribute('href', 'projects/BlissLife.html');
             button2.innerText = 'Learn More';
             button2.classList.add('learn-more-button', 'page-link');
             button2.addEventListener('click', handleButtonClick);
