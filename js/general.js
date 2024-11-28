@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //藍色loading out
 document.addEventListener('DOMContentLoaded', function () {
     const pagetransition = document.querySelector('.pagetransition');
-    
+
     // 初始化 pagetransition 狀態
     gsap.set(pagetransition, { scaleX: 0 });
 
@@ -81,22 +81,14 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // 處理返回上一頁時的動畫
-    window.addEventListener('popstate', function () {
-        const tl = gsap.timeline();
-        tl.fromTo(pagetransition, 
-            { scaleX: 1 }, // 保持頁面轉場為全屏狀態
-            { 
-                duration: 0.8,
-                scaleX: 0,
-                ease: 'power2.inOut',
-                onComplete: function () {
-                    // 動畫結束後繼續保持頁面的互動性
-                }
-            }
-        );
+    // 處理返回上一頁時的行為（不執行動畫）
+    window.addEventListener('pageshow', function (event) {
+        if (event.persisted) { // 如果頁面從快取恢復
+            gsap.set(pagetransition, { scaleX: 0 }); // 確保轉場狀態重置
+        }
     });
 });
+
 
 
 

@@ -1,15 +1,15 @@
 //藍色out
-document.addEventListener("DOMContentLoaded", function () {
-    // GSAP animation for fading out the loading transition
-    gsap.to(".loading-transition", {
-      opacity: 0, // Fade out the element
-      duration: 2.0, // Duration of the fade-out effect
-      ease: "power2.inOut", // Easing function for smooth transition
-      onComplete: function () {
-        document.querySelector(".loading-transition").style.display = "none"; // Hide the element
-      }
-    });
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//     // GSAP animation for fading out the loading transition
+//     gsap.to(".loading-transition", {
+//       opacity: 0, // Fade out the element
+//       duration: 2.0, // Duration of the fade-out effect
+//       ease: "power2.inOut", // Easing function for smooth transition
+//       onComplete: function () {
+//         document.querySelector(".loading-transition").style.display = "none"; // Hide the element
+//       }
+//     });
+// });
 
 
 
