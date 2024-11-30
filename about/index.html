@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Zoe Yiu | Portfolio</title>
+    <!--CSS Link-->
+    <link rel="stylesheet" href="../css/general_style.css" />
+    <link rel="stylesheet" href="../css/contentTemplate.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!--logo Link-->
+    <link rel="icon" href="../media/logo2.png" type="image/png" />
+    <!--Google Font-Montserrat & Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!--font-awesome: https://fontawesome.com/-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <div class="loading-transition2"></div>
+  <body class="main" style="opacity: 0">
+    <div class="mouse-follower"></div>
+    <header>
+      <a href="/index.html" class="page-link">
+        <img src="/media/logo.png" alt="Zoe Portfolio Logo" class="logo" />
+      </a>
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </header>
+    <div class="full-screen-menu" id="fullScreenMenu">
+      <div class="close" onclick="toggleMenu()">&times;</div>
+      <nav>
+        <a href="../" class="page-link" onclick="toggleMenu()">Homepage</a>
+        <a href="../about/" class="page-link" onclick="toggleMenu()">About Me</a>
+        <a href="../projects/" class="page-link" onclick="toggleMenu()">Projects</a>
+        <a href="https://drive.google.com/file/d/1K0ddhnMyU_TVn1edTGCKjBvtFfz0d4ar/view?usp=sharing" target="_blank" onclick="toggleMenu()">Resume</a>
+        <a href="mailto:zoeyiu0821@gmail.com">Contact Me</a>
+        <!-- <a href="../contact/" class="page-link" onclick="toggleMenu()">Contact Me</a> -->
+    </nav>
+    </div>
+    <main>
+      <div class="relative font-inter antialiased">
+        <main
+          class="relative min-h-screen flex flex-col justify-center bg-slate-50 overflow-hidden supports-[overflow:clip]:overflow-clip">
+          <div class="w-full max-w-6xl mx-auto px-4 md:px-10 py-24 ">
+            <div class="flex items-center justify-center text-4xl font-bold text-slate-300 gap-4 md:gap-10 lg:gap-12"  
+              id="contain" 
+              style="height: calc(130vh - 10rem);" 
+              data-mobile-height="200vh" 
+              data-small-height="250vh"
+              data-extra-small-height="300vh">
+              <div class="left-block flex items-center justify-center">
+                <img src="../media/me2.jpg" alt="Your Image" class="max-w-full max-h-full object-contain">
+              </div>
+              <div class="right-block flex flex-col justify-center items-start text-left ">
+                <div class="relative inline-flex text-indigo-500 font-semibold" style="font-size: 30px;">
+                  <h2>About Me</h2>
+                  <svg class="fill-indigo-300 absolute top-full w-full"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="166"
+                    height="4">
+                    <path d="M98.865 1.961c-8.893.024-17.475.085-25.716.182-2.812.019-5.023.083-7.622.116l-6.554.067a2910.9 2910.9 0 0 0-25.989.38c-4.04.067-7.709.167-11.292.27l-1.34.038c-2.587.073-4.924.168-7.762.22-2.838.051-6.054.079-9.363.095-1.994.007-2.91-.08-3.106-.225l-.028-.028c-.325-.253.203-.463 1.559-.62l.618-.059c.206-.02.42-.038.665-.054l1.502-.089 3.257-.17 2.677-.132c.902-.043 1.814-.085 2.744-.126l1.408-.06c4.688-.205 10.095-.353 16.167-.444C37.413 1.22 42.753.98 49.12.824l1.614-.037C54.041.707 57.588.647 61.27.6l1.586-.02c4.25-.051 8.53-.1 12.872-.14C80.266.4 84.912.373 89.667.354l2.866-.01c8.639-.034 17.996 0 27.322.03 6.413.006 13.168.046 20.237.12l2.368.027c1.733.014 3.653.05 5.712.105l2.068.064c5.89.191 9.025.377 11.823.64l.924.09c.802.078 1.541.156 2.21.233 1.892.233.29.343-3.235.364l-3.057.02c-.446.003-.89.008-1.33.014a305.77 305.77 0 0 1-4.33-.004c-2.917-.005-5.864-.018-8.783-.019l-4.982.003a447.91 447.91 0 0 1-3.932-.02l-4.644-.023-4.647-.014c-9.167-.026-18.341-.028-26.923.03l-.469-.043Z"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-lg text-slate-500" style="margin-top: 1rem; font-weight: 400;" >
+                    I hold a Bachelor's degree in Literature, and stepping into a software 
+                    product management role right after graduation was an unconventional choice 
+                    for someone from my field. However, my passion for creating impactful products 
+                    drove me to embrace the challenge and pursue the path of product management.
+
+                    I've always been fascinated by <strong>human behavior and thrive in cross-team collaborations</strong>. 
+                    Of course, working in product management came with its challenges—sometimes 
+                    dealing with the “dirty things”, but over the course of 3 years, 
+                    I've developed invaluable communication skills, especially 
+                    learning how to negotiate and find win-win solutions for all parties involved.
+                  </p>
+                  <p class="text-lg text-slate-500" style="margin-top: 1rem; font-weight: 400;" >
+                    2021 marked a turning point for me when I discovered UI/UX design. 
+                    This new field ignited a passion I didn't expect, and I quickly dove 
+                    into the <strong>Google UX course</strong>. From there, I had the opportunity to lead internal 
+                    UI/UX projects, redesign products, and even worked on a side project where I 
+                    revamped Taiwan's second-largest convenience store app. 
+                    The more I immersed myself in this world, the clearer it became 
+                    that this was the direction I wanted to pursue.
+                  </p>
+                  <p class="text-lg text-slate-500" style="margin-top: 1rem; font-weight: 400;">
+                    In 2023, I made a decisive move to focus on <strong>Interaction design</strong> and 
+                    joined <strong>University of Queensland</strong>. This experience has been incredibly inspiring—both 
+                    in terms of design and technical growth. At UQ, <strong>I've explored XR design, 
+                    developed a VR 3D game, worked on 6 UI/UX design projects, and even took on front-end web development.</strong> With each new challenge, my passion for crafting meaningful digital solutions with a user-centered approach only grows stronger.
+               
+                  </p>   
+                </div>
+              </div>
+            </div>
+            <!-- Scroll Animation -->
+            <div class="max-w-md mx-auto lg:max-w-none lg:min-h-[var(--stick-items)] " data-sticky-sections style="--stick-items: 130vh" >
+              <div class="lg:sticky lg:top-0 lg:h-screen space-y-16 lg:space-y-0">
+                <!-- Section #1 -->
+                <section class="lg:absolute lg:inset-0 lg:z-[var(--stick-visibility)]">
+                  <div class="flex flex-col lg:h-full lg:flex-row space-y-4 space-y-reverse lg:space-y-0 lg:space-x-20" >
+                    <div class="flex-1 flex items-center lg:opacity-[var(--stick-visibility)] transition-opacity duration-300 order-1 lg:order-none" >
+                      <div class="space-y-3">
+                        <div class="relative inline-flex text-indigo-500 font-semibold" style="font-size: 30px;">
+                          <h2>Education</h2>
+                          <svg class="fill-indigo-300 absolute top-full w-full"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="166"
+                            height="4">
+                            <path d="M98.865 1.961c-8.893.024-17.475.085-25.716.182-2.812.019-5.023.083-7.622.116l-6.554.067a2910.9 2910.9 0 0 0-25.989.38c-4.04.067-7.709.167-11.292.27l-1.34.038c-2.587.073-4.924.168-7.762.22-2.838.051-6.054.079-9.363.095-1.994.007-2.91-.08-3.106-.225l-.028-.028c-.325-.253.203-.463 1.559-.62l.618-.059c.206-.02.42-.038.665-.054l1.502-.089 3.257-.17 2.677-.132c.902-.043 1.814-.085 2.744-.126l1.408-.06c4.688-.205 10.095-.353 16.167-.444C37.413 1.22 42.753.98 49.12.824l1.614-.037C54.041.707 57.588.647 61.27.6l1.586-.02c4.25-.051 8.53-.1 12.872-.14C80.266.4 84.912.373 89.667.354l2.866-.01c8.639-.034 17.996 0 27.322.03 6.413.006 13.168.046 20.237.12l2.368.027c1.733.014 3.653.05 5.712.105l2.068.064c5.89.191 9.025.377 11.823.64l.924.09c.802.078 1.541.156 2.21.233 1.892.233.29.343-3.235.364l-3.057.02c-.446.003-.89.008-1.33.014a305.77 305.77 0 0 1-4.33-.004c-2.917-.005-5.864-.018-8.783-.019l-4.982.003a447.91 447.91 0 0 1-3.932-.02l-4.644-.023-4.647-.014c-9.167-.026-18.341-.028-26.923.03l-.469-.043Z"/>
+                          </svg>
+                        </div>
+                        <h3 class="text-4xl text-slate-900 font-extrabold">
+                            Diverse International Experience
+                        </h3>
+                        <p class="text-lg text-slate-500">
+                            <strong style="color: rgb(8, 39, 123);font-weight: bold;">|  2023 - Now  </strong>
+                            <br>
+                            Univeristy of Queensland (Brisbane, Australia) / Master of Interaction Design
+                            
+                            <br>
+                            <strong style="color: rgb(8, 39, 123);font-weight: bold;">|  2019 - 2020  </strong>
+                            <br>
+                            Fudan University (Shanghai, China) / Exchange Student of Business Administration
+                            
+                            <br>
+                            <strong style="color: rgb(8, 39, 123);font-weight: bold;">| 2016 - 2020  </strong>
+                            <br>
+                            National Sun Yat-sen University (Kaohsiung, Taiwan) / Bachelor of Arts
+                           
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex-1 flex items-center lg:scale-[var(--stick-scale)] lg:opacity-[var(--stick-visibility)] transition duration-300"
+                    >
+                      <img
+                        width="512"
+                        height="480"
+                        src="../media/education.jpg"
+                        alt="Image of My International Experience"
+                      />
+                    </div>
+                  </div>
+                </section>
+                <!-- Section #2 -->
+                <section class="lg:absolute lg:inset-0 lg:z-[var(--stick-visibility)]">
+                  <div class="flex flex-col lg:min-h-full lg:flex-row space-y-4 space-y-reverse lg:space-y-0 lg:space-x-20" >
+                    <div class="flex-1 flex items-center lg:opacity-[var(--stick-visibility)] transition-opacity duration-300 order-1 lg:order-none" >
+                      <div class="space-y-3">
+                        <div class="relative inline-flex text-indigo-500 font-semibold" style="font-size: 30px">
+                          
+                          <h2>Experience</h2>
+                          <svg
+                            class="fill-indigo-300 absolute top-full w-full"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="166"
+                            height="4"
+                          >
+                            <path
+                              d="M98.865 1.961c-8.893.024-17.475.085-25.716.182-2.812.019-5.023.083-7.622.116l-6.554.067a2910.9 2910.9 0 0 0-25.989.38c-4.04.067-7.709.167-11.292.27l-1.34.038c-2.587.073-4.924.168-7.762.22-2.838.051-6.054.079-9.363.095-1.994.007-2.91-.08-3.106-.225l-.028-.028c-.325-.253.203-.463 1.559-.62l.618-.059c.206-.02.42-.038.665-.054l1.502-.089 3.257-.17 2.677-.132c.902-.043 1.814-.085 2.744-.126l1.408-.06c4.688-.205 10.095-.353 16.167-.444C37.413 1.22 42.753.98 49.12.824l1.614-.037C54.041.707 57.588.647 61.27.6l1.586-.02c4.25-.051 8.53-.1 12.872-.14C80.266.4 84.912.373 89.667.354l2.866-.01c8.639-.034 17.996 0 27.322.03 6.413.006 13.168.046 20.237.12l2.368.027c1.733.014 3.653.05 5.712.105l2.068.064c5.89.191 9.025.377 11.823.64l.924.09c.802.078 1.541.156 2.21.233 1.892.233.29.343-3.235.364l-3.057.02c-.446.003-.89.008-1.33.014a305.77 305.77 0 0 1-4.33-.004c-2.917-.005-5.864-.018-8.783-.019l-4.982.003a447.91 447.91 0 0 1-3.932-.02l-4.644-.023-4.647-.014c-9.167-.026-18.341-.028-26.923.03l-.469-.043Z"
+                            />
+                          </svg>
+                        </div>
+                        <h3 class="text-4xl text-slate-900 font-extrabold">
+                            Product Manager to UX/UI Designer 
+                        </h3>
+                        <p class="text-lg text-slate-500">
+                            With 3 years of experience as a Product Manager in the banking industry 
+                            and SaaS startups, and 2 years in UX/UI design, I specialize in crafting 
+                            user-centered designs that bridge the gap between user needs and technical 
+                            constraints. I excel in UX design, generating multiple design concepts for a 
+                            single feature, always ensuring a balance between optimal user experience and 
+                            feasible technical solutions.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex-1 flex items-center lg:scale-[var(--stick-scale)] lg:opacity-[var(--stick-visibility)] transition duration-300"
+                    >
+                      <img
+                        width="512"
+                        height="480"
+                        src="../media/career.jpg"
+                        alt="Image of My Career Timeline"
+                      />
+                    </div>
+                  </div>
+                </section>
+                <!-- Section #3 -->
+                <section
+                  class="lg:absolute lg:inset-0 lg:z-[var(--stick-visibility)]"
+                >
+                  <div
+                    class="flex flex-col lg:min-h-full lg:flex-row space-y-4 space-y-reverse lg:space-y-0 lg:space-x-20">
+                    <div class="flex-1 flex items-center lg:opacity-[var(--stick-visibility)] transition-opacity duration-300 order-1 lg:order-none">
+                      <div class="space-y-3">
+                        <div
+                          class="relative inline-flex text-indigo-500 font-semibold" style="font-size: 30px">
+                          <h2>Skills I Have</h2>
+                          
+                          <svg
+                            class="fill-indigo-300 absolute top-full w-full"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="166"
+                            height="4"
+                          >
+                            <path
+                              d="M98.865 1.961c-8.893.024-17.475.085-25.716.182-2.812.019-5.023.083-7.622.116l-6.554.067a2910.9 2910.9 0 0 0-25.989.38c-4.04.067-7.709.167-11.292.27l-1.34.038c-2.587.073-4.924.168-7.762.22-2.838.051-6.054.079-9.363.095-1.994.007-2.91-.08-3.106-.225l-.028-.028c-.325-.253.203-.463 1.559-.62l.618-.059c.206-.02.42-.038.665-.054l1.502-.089 3.257-.17 2.677-.132c.902-.043 1.814-.085 2.744-.126l1.408-.06c4.688-.205 10.095-.353 16.167-.444C37.413 1.22 42.753.98 49.12.824l1.614-.037C54.041.707 57.588.647 61.27.6l1.586-.02c4.25-.051 8.53-.1 12.872-.14C80.266.4 84.912.373 89.667.354l2.866-.01c8.639-.034 17.996 0 27.322.03 6.413.006 13.168.046 20.237.12l2.368.027c1.733.014 3.653.05 5.712.105l2.068.064c5.89.191 9.025.377 11.823.64l.924.09c.802.078 1.541.156 2.21.233 1.892.233.29.343-3.235.364l-3.057.02c-.446.003-.89.008-1.33.014a305.77 305.77 0 0 1-4.33-.004c-2.917-.005-5.864-.018-8.783-.019l-4.982.003a447.91 447.91 0 0 1-3.932-.02l-4.644-.023-4.647-.014c-9.167-.026-18.341-.028-26.923.03l-.469-.043Z"
+                            />
+                          </svg>
+                        </div>
+                        <h3 class="text-4xl text-slate-900 font-extrabold">
+                            Multidisciplinary Talent
+                        </h3>
+                        <p class="text-lg text-slate-500">
+                            <i class="fa-solid fa-pen-nib" style="margin-right: 10px;"></i>Design : Figma, Adobe XD
+                            <br>
+                            <i class="fa-regular fa-window-restore" style="margin-right: 10px;"></i>Development: HTML, CSS, Javascript, C#
+                            <br>
+                            <i class="fa-solid fa-chart-line" style="margin-right: 10px;"></i>Analysis: SQL, Google Analytics
+                            <br>
+                            <i class="fa-solid fa-stamp" style="margin-right: 10px;"></i>More: Digital Marketing, Product Management
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex-1 flex items-center lg:scale-[var(--stick-scale)] lg:opacity-[var(--stick-visibility)] transition duration-300"
+                    >
+                      <img
+                        width="512"
+                        height="480"
+                        src="../media/skill.jpg"
+                        alt="Image of Skills"
+                      />
+                    </div>
+                  </div>
+                </section>
+                <!-- Section #4 -->
+                <section
+                  class="lg:absolute lg:inset-0 lg:z-[var(--stick-visibility)]"
+                >
+                  <div
+                    class="flex flex-col lg:min-h-full lg:flex-row space-y-4 space-y-reverse lg:space-y-0 lg:space-x-20"
+                  >
+                    <div
+                      class="flex-1 flex items-center lg:opacity-[var(--stick-visibility)] transition-opacity duration-300 order-1 lg:order-none"
+                    >
+                      <div class="space-y-3">
+                        <div
+                          class="relative inline-flex text-indigo-500 font-semibold" style="font-size: 30px">
+                          <h2>Know Me More</h2>
+                          <svg
+                            class="fill-indigo-300 absolute top-full w-full"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="166"
+                            height="4"
+                          >
+                            <path
+                              d="M98.865 1.961c-8.893.024-17.475.085-25.716.182-2.812.019-5.023.083-7.622.116l-6.554.067a2910.9 2910.9 0 0 0-25.989.38c-4.04.067-7.709.167-11.292.27l-1.34.038c-2.587.073-4.924.168-7.762.22-2.838.051-6.054.079-9.363.095-1.994.007-2.91-.08-3.106-.225l-.028-.028c-.325-.253.203-.463 1.559-.62l.618-.059c.206-.02.42-.038.665-.054l1.502-.089 3.257-.17 2.677-.132c.902-.043 1.814-.085 2.744-.126l1.408-.06c4.688-.205 10.095-.353 16.167-.444C37.413 1.22 42.753.98 49.12.824l1.614-.037C54.041.707 57.588.647 61.27.6l1.586-.02c4.25-.051 8.53-.1 12.872-.14C80.266.4 84.912.373 89.667.354l2.866-.01c8.639-.034 17.996 0 27.322.03 6.413.006 13.168.046 20.237.12l2.368.027c1.733.014 3.653.05 5.712.105l2.068.064c5.89.191 9.025.377 11.823.64l.924.09c.802.078 1.541.156 2.21.233 1.892.233.29.343-3.235.364l-3.057.02c-.446.003-.89.008-1.33.014a305.77 305.77 0 0 1-4.33-.004c-2.917-.005-5.864-.018-8.783-.019l-4.982.003a447.91 447.91 0 0 1-3.932-.02l-4.644-.023-4.647-.014c-9.167-.026-18.341-.028-26.923.03l-.469-.043Z"
+                            />
+                          </svg>
+                        </div>
+                        <h3 class="text-4xl text-slate-900 font-extrabold">
+                           Blogger & Women in Computing Ambassador 
+                        </h3>
+                        <p class="text-lg text-slate-500">
+                            I’ve been a WordPress blogger for 5 years, a journey where I’ve 
+                            shared workplace experiences and inspirations from movies, books, and the world around me. 
+                            Writing, for me, isn’t just a hobby—it’s a spirit that fuels my 
+                            creativity. 
+                            <br>
+                            <br>
+                            As one of the few women in the tech field, please don't doubt that because
+                            only 10% of engineering students at UQ are female. 
+                            This inspires me to become an ambassador for women in computing, 
+                            encouraging more young female talent to join the tech industry.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex-1 flex items-center lg:scale-[var(--stick-scale)] lg:opacity-[var(--stick-visibility)] transition duration-300"
+                    >
+                      <img
+                        width="512"
+                        height="480"
+                        src="../media/WIC.jpg"
+                        alt="Image of Women in Computing"
+                      />
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <!-- End: Scroll Animation -->
+
+            <div class="h-[calc(100vh-6rem)] flex items-center justify-center text-4xl font-bold text-slate-300 text-center">
+              <section class="slogan">
+                <div class="worktgt">
+                  <p id="designer">NEED A DESIGNER?</p>
+                  <div class="contact" style="color:black">
+                    Let's Work Together <i class="fas fa-arrow-down iconarrow" style="color:black"></i>
+                  </div>
+                  <div class="contactme">
+                    <div>
+                      <a href="https://www.linkedin.com/in/zoeyiu0821/" target="_blank">
+                        <button class="learn-more-button">
+                          <i class="fa-brands fa-linkedin-in icon" style="color: #ffffff;"></i>LinkedIn
+                        </button>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="https://drive.google.com/file/d/1K0ddhnMyU_TVn1edTGCKjBvtFfz0d4ar/view?usp=sharing" target="_blank">
+                        <button class="learn-more-button">
+                          <i class="fa-regular fa-file icon" style="color: #ffffff;"></i>Resume
+                          
+                        </button>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="mailto:zoeyiu0821@gmail.com" target="_blank">
+                        <button class="learn-more-button">
+                          <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>zoeyiu0821@gmail.com
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            
+          </div>
+          <footer>
+            <div class="wrapper">
+              <div class="row"></div>
+              <div class="container_info">
+                <ul class="info">
+                  <h3>Contact Information<h3>
+                  <p>Feel free to reach out to me any time.</p>
+                  <p><a href="mailto:zoeyiu0821@gmail.com">zoeyiu0821@gmail.com</a></p>  
+                </ul>
+                <ul class="project_info">
+                  <h3>Featured Projects<h3>
+                  <li><a href="/projects/ZenZzz.html" target="_blank">ZenZzz</a></li>
+                  <li><a href="/projects/BlissLife.html" target="_blank">BlissLife</a></li>
+                  <li><a href="/projects/CreditCard.html" target="_blank">Credit Card Platform</a></li>
+                  <li><a href="/projects/Googleslides.html" target="_blank">Google Slides Research</a></li>
+                  
+                </ul>
+                <ul class="project_info">
+                  <h3>More Work<h3>
+                  <li><a href="/projects/FamilyMart.html" target="_blank">FamilyMart</a></li>
+                  <li><a href="/projects/LeapNews.html" target="_blank">Leap News</a></li>
+                  <li><a href="/projects/DesignThinking.html" target="_blank">Design Thinking</a></li>
+                  <li><a href="/projects/Wcag.html" target="_blank">WCAG Research</a></li>
+                </ul>
+                <ul>
+                  <h3>Follow Me</h3>
+                  <div class="contact_icons">
+                    
+                    <a href="https://www.linkedin.com/in/zoeyiu0821/" target="_blank"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
+                    <a href="https://zoeyuchat.wordpress.com" target="_blank"><i class="fa-brands fa-wordpress" id="wordpress"></i></a>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </footer>
+        </main>
+      </div>
+    </main>
+    <script src="../js/general.js"></script>
+    <script src="../js/about.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  </body>
+</html>

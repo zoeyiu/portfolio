@@ -1,0 +1,175 @@
+body{
+    font-family:'Open Sans';
+}
+
+#contain{
+    display: flex;
+    flex-direction: row;
+}
+
+.custom-img {
+    height: 4px; /* 確保高度與 SVG 一致 */
+    width: 100%; /* 保持寬度填滿容器 */
+  }
+
+  
+/*Slogan*/
+.slogan{
+    width: 100%;
+    height: 50vh;
+    background-color: #ffffff;
+}
+
+.worktgt{
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  height: 50vh; 
+  text-align: center; 
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.iconarrow {
+  margin-left: 8px; 
+}
+
+#designer{
+  font-size: 16px;
+  color: #878a8f;
+}
+
+.contact{
+  font-size: 48px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit; 
+  position: relative;
+  margin-top: 8px; 
+}
+
+.contact::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; 
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease;}
+
+.contact:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+
+}
+
+.learn-more-button {
+    background-color: #000;                 /* Button background color */
+    border: 1px solid #000;                 /* Button border */
+    border-radius: 4px;                     /* Rounded corners */
+    box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px; /* Shadow effect */
+    box-sizing: border-box;                 /* Include padding and border in element's total width and height */
+    color: #fff;                            /* Button text color */
+    cursor: pointer;                        /* Pointer cursor on hover */
+    display: inline-block;                  /* Inline block display */
+    font-size: 14px;                        /* Font size */
+    font-weight: 400;                       /* Font weight */
+    line-height: 20px;                      /* Line height */
+    margin: 0 5px 10px 0;                   /* Margin around the button */
+    overflow: visible;                      /* Overflow handling */
+    padding: 12px 40px;                     /* Padding inside the button */
+    text-align: center;                     /* Center the text */
+    text-transform: none;                   /* Do not transform text */
+    touch-action: manipulation;             /* Enable touch manipulation */
+    user-select: none;                      /* Disable text selection */
+    -webkit-user-select: none;              /* Disable text selection in WebKit browsers */
+    vertical-align: middle;                 /* Align the button vertically */
+    white-space: nowrap;                    /* Prevent text from wrapping */
+    
+    margin-top: 10px;
+  }
+  
+
+.learn-more-button:focus {
+  text-decoration: none;
+  background-color: #20459F;
+}
+
+.learn-more-button:hover {
+  text-decoration: none;
+  background-color: #20459F;
+}
+
+.learn-more-button:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.learn-more-button:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+.icon {
+    font-size: 16px; /* 控制圖標大小 */
+    margin-right: 8px;
+  }
+
+.contactme{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 5%;
+}
+
+@media (max-width: 1100px) {
+    #contain{
+        flex-direction: column;
+    }
+
+    #contain img{
+        width: 300px;
+    }
+}
+
+@media (max-width: 660px) {
+    .contactme{
+        flex-direction: column;
+        gap:5px;
+    }
+
+    
+}
+
+@media (max-width: 400px) {
+    .contactme{
+        flex-direction: column;
+        gap:5px;
+        margin-top: 10%;
+        margin-bottom: 15%;
+    }
+
+    .contact{
+        flex-direction: column;
+        
+    }
+
+    .iconarrow{
+        margin-top: 10%;
+        margin-left: 0px;
+    }
+
+    .slogan{
+        height: 80vh;
+    }
+
+    .worktgt{
+        height: 80vh;
+    }
+}
