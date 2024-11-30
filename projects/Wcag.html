@@ -1,38 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Zoe Yiu | Portfolio</title>
+        <!--CSS Link-->
+        <link rel="stylesheet" href="../css/general_style.css" />  
+        <link rel="stylesheet" href="../css/wcag.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <!--logo Link-->
+        <link rel="icon" href="../media/logo2.png" type="image/png" />
+        <!--Google Font-Montserrat & Open Sans-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
+        <!--font-awesome: https://fontawesome.com/-->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+        <!-- Prism.js 核心文件 -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
 
-    <title>Zoe Yiu | Portfolio</title>
-    <!--CSS Link-->
-    <link rel="stylesheet" href="../css/general_style.css" />  
-    <link rel="stylesheet" href="../css/wcag.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
-    <!--logo Link-->
-    <link rel="icon" href="../media/logo2.png" type="image/png" />
-    <!--Google Font-Montserrat & Open Sans-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-    <!--font-awesome: https://fontawesome.com/-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <!-- Prism.js 核心文件 -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
-
-  </head>
-  <div class="loading-transition2"></div>
-  <body class="main" style="opacity: 0;">
-        
+    </head>
+    <div class="loading-transition2"></div>
+    <body class="main" style="opacity: 0;">   
         <div class="mouse-follower"></div>
         <header>
             <a href="../" class="page-link">
@@ -41,24 +34,16 @@
             <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
         </header>
         <div class="full-screen-menu" id="fullScreenMenu">
-            <header>
-                <a href="../" class="page-link">
-                    <img src="../media/logo.png" alt="Zoe Portfolio Logo" class="logo" />
-                </a>
-                <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
-            </header>
-            <div class="full-screen-menu" id="fullScreenMenu">
-                <div class="close" onclick="toggleMenu()">&times;</div>
-                <nav>
-                    <a href="../" class="page-link" onclick="toggleMenu()">Homepage</a>
-                    <a href="../about/" class="page-link" onclick="toggleMenu()">About Me</a>
-                    <a href="../" class="page-link" onclick="toggleMenu()">Projects</a>
-                    <!-- <a href="../projects/" class="page-link" onclick="toggleMenu()">Projects</a> -->
-                    <a href="https://drive.google.com/file/d/1K0ddhnMyU_TVn1edTGCKjBvtFfz0d4ar/view?usp=sharing" target="_blank" onclick="toggleMenu()">Resume</a>
-                    <a href="mailto:zoeyiu0821@gmail.com">Contact Me</a>
-                    <!-- <a href="../contact/" class="page-link" onclick="toggleMenu()">Contact Me</a> -->
-                </nav>
-            </div>
+            <div class="close" onclick="toggleMenu()">&times;</div>
+            <nav>
+                <a href="../" class="page-link" onclick="toggleMenu()">Homepage</a>
+                <a href="../about/" class="page-link" onclick="toggleMenu()">About Me</a>
+                <a href="../" class="page-link" onclick="toggleMenu()">Projects</a>
+                <!-- <a href="../projects/" class="page-link" onclick="toggleMenu()">Projects</a> -->
+                <a href="https://drive.google.com/file/d/1K0ddhnMyU_TVn1edTGCKjBvtFfz0d4ar/view?usp=sharing" target="_blank" onclick="toggleMenu()">Resume</a>
+                <a href="mailto:zoeyiu0821@gmail.com">Contact Me</a>
+                <!-- <a href="../contact/" class="page-link" onclick="toggleMenu()">Contact Me</a> -->
+            </nav>
         </div>
         <main >
             <section class="title-container">
@@ -201,10 +186,10 @@
                             </p>
                             <blockquote>
                                 <p> &lt;svg width="112" height="32" viewBox="0 0 112 32" fill="none" xmlns="http://www.w3.org/2000/svg" <span class="highlight">role="img" aria-label="BBC Logo"</span>&gt;
-                                  &lt;/svg&gt;</p> 
+                                &lt;/svg&gt;</p> 
 
                             </blockquote>
-                              
+                            
                             <div class="bbc-issue">
                                 <figure>
                                     <img src="../media/bbc_sourceCode_logo.png" alt="BBC News Logo Source Code" />
@@ -367,49 +352,50 @@
                 </div>
             </section>
         </main>
-        <footer>
-            <div class="wrapper">
-              <div class="row"></div>
-              <div class="container_info">
-                <ul class="info">
-                  <h3>Contact Information<h3>
-                  <p>Feel free to reach out to me any time.</p>
-                  <p><a href="mailto:zoeyiu0821@gmail.com">zoeyiu0821@gmail.com</a></p>  
-                </ul>
-                <ul class="project_info">
-                  <h3>Featured Projects<h3>
-                  <li><a href="../projects/ZenZzz.html" target="_blank">ZenZzz</a></li>
-                  <li><a href="../projects/BlissLife.html" target="_blank">BlissLife</a></li>
-                  <li><a href="../projects/CreditCard.html" target="_blank">Credit Card Platform</a></li>
-                  <li><a href="../projects/Googleslides.html" target="_blank">Google Slides Research</a></li>
-                  
-                </ul>
-                <ul class="project_info">
-                  <h3>More Work<h3>
-                  <li><a href="../projects/FamilyMart.html" target="_blank">FamilyMart</a></li>
-                  <li><a href="../projects/LeapNews.html" target="_blank">Leap News</a></li>
-                  <!-- <li><a href="../projects/DesignThinking.html" target="_blank">Design Thinking</a></li> -->
-                  <li><a href="../projects/Wcag.html" target="_blank">WCAG Research</a></li>
-                </ul>
-                <ul>
-                  <h3>Follow Me</h3>
-                  <div class="contact_icons">
+            <footer>
+                <div class="wrapper">
+                <div class="row"></div>
+                <div class="container_info">
+                    <ul class="info">
+                    <h3>Contact Information<h3>
+                    <p>Feel free to reach out to me any time.</p>
+                    <p><a href="mailto:zoeyiu0821@gmail.com">zoeyiu0821@gmail.com</a></p>  
+                    </ul>
+                    <ul class="project_info">
+                    <h3>Featured Projects<h3>
+                    <li><a href="../projects/ZenZzz.html" target="_blank">ZenZzz</a></li>
+                    <li><a href="../projects/BlissLife.html" target="_blank">BlissLife</a></li>
+                    <li><a href="../projects/CreditCard.html" target="_blank">Credit Card Platform</a></li>
+                    <li><a href="../projects/Googleslides.html" target="_blank">Google Slides Research</a></li>
                     
-                    <a href="https://www.linkedin.com/in/zoeyiu0821/" target="_blank"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
-                    <a href="https://zoeyuchat.wordpress.com" target="_blank"><i class="fa-brands fa-wordpress" id="wordpress"></i></a>
-                  </div>
-                </ul>
-              </div>
+                    </ul>
+                    <ul class="project_info">
+                    <h3>More Work<h3>
+                    <li><a href="../projects/FamilyMart.html" target="_blank">FamilyMart</a></li>
+                    <li><a href="../projects/LeapNews.html" target="_blank">Leap News</a></li>
+                    <!-- <li><a href="../projects/DesignThinking.html" target="_blank">Design Thinking</a></li> -->
+                    <li><a href="../projects/Wcag.html" target="_blank">WCAG Research</a></li>
+                    </ul>
+                    <ul>
+                    <h3>Follow Me</h3>
+                    <div class="contact_icons">
+                        
+                        <a href="https://www.linkedin.com/in/zoeyiu0821/" target="_blank"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
+                        <a href="https://zoeyuchat.wordpress.com" target="_blank"><i class="fa-brands fa-wordpress" id="wordpress"></i></a>
+                    </div>
+                    </ul>
+                </div>
+                </div>
+            </footer>
+            <div class="pagetransition">
+                <div class="transition_text">
+                <p>Let's Work Together</p>
+                </div>
             </div>
-        </footer>
-        <div class="pagetransition">
-            <div class="transition_text">
-              <p>Let's Work Together</p>
-            </div>
+            <script src="../js/general.js"></script>
+            <script src="../js/wcag.js"></script>
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
         </div>
-        <script src="../js/general.js"></script>
-        <script src="../js/wcag.js"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     </body>
 </html>
